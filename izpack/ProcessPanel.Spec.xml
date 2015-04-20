@@ -4,13 +4,18 @@
 	<job name="show quickstart guide">
 		<os family="windows" />
 		<executeForPack name="Docs"/>
-		<executefile name="$INSTALL_PATH/bin/show_quickstart_guide.bat" />
+		<executefile name="cmd">
+			<arg>/c</arg>
+			<arg>$INSTALL_PATH\doc\pdf\quickstart_guide.pdf</arg>
+		</executefile>
 	</job>
 
 	<job name="show quickstart guide">
 		<os family="unix" />
 		<executeForPack name="Docs"/>
-		<executefile name="$INSTALL_PATH/bin/show_quickstart_guide.sh" />
+		<executefile name="xdg-open">
+			<arg>$INSTALL_PATH/doc/pdf/quickstart_guide.pdf</arg>
+		</executefile>
 	</job>
 
 </processing>

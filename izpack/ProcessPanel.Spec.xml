@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<processing>
+	<job name="show quickstart guide">
+		<os family="windows" />
+		<executeForPack name="Docs"/>
+		<executefile name="$INSTALL_PATH/bin/show_quickstart_guide.bat" />
+	</job>
+
+	<job name="show quickstart guide">
+		<os family="unix" />
+		<executeForPack name="Docs"/>
+		<executefile name="$INSTALL_PATH/bin/show_quickstart_guide.sh" />
+	</job>
+
+</processing>

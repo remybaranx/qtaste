@@ -43,6 +43,7 @@
         <res id="LicencePanel.licence" src="../COPYING.LESSER"/>
         <!-- Set the default installation directory shown in the TargetPanel -->
         <res id="TargetPanel.dir.windows" src="TargetDir.txt" />
+		<res id="ProcessPanel.Spec.xml" src="ProcessPanel.Spec.xml" />
     </resources>
 
     <!--
@@ -59,8 +60,8 @@ to be rechecked in version 5.0.0-beta11 or later
 -->
         <panel classname="PacksPanel"/>
         <panel classname="InstallPanel"/>
-        <panel classname="FinishPanel"/>
         <panel classname="ProcessPanel"/>
+        <panel classname="FinishPanel"/>
     </panels>
 
     <!--
@@ -95,6 +96,9 @@ to be rechecked in version 5.0.0-beta11 or later
         <exclude name="**/.svn/**"/>
         </fileset>
         <executable targetfile="$INSTALL_PATH/bin/generate-TestSuites-doc.sh" stage="never">
+        <os family="unix"/>
+        </executable>
+        <executable targetfile="$INSTALL_PATH/bin/show_quickstart_guide.sh" stage="never">
           <os family="unix"/>
         </executable>
         <executable targetfile="$INSTALL_PATH/bin/qtasteUI_start.sh" stage="never">

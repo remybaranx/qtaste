@@ -100,9 +100,12 @@ from com.qspin.qtaste.tcom.rlogin import RLogin as _RLogin
 # set log4j logger level to WARN
 _Logger.getRootLogger().setLevel(_Level.WARN)
 
+#--------------------------------------------------------------
+# Utility functions
+#--------------------------------------------------------------
+
 # conditional expression
 _IF = lambda a,b,c:(a and [b] or [c])[0]
-
 
 def _exitWithError(message):
 	""" Exits program with error code 1 after printing given message to standard error output """
@@ -136,6 +139,9 @@ def _getTestbedConfig():
 	_TestBedConfiguration.setConfigFile(_os.path.abspath(testbed))
 	return _TestBedConfiguration.getInstance()
 
+#--------------------------------------------------------------
+# Global variables
+#--------------------------------------------------------------
 
 # parsing command-line arguments
 # set start to true if and only if first argument is 'start'
@@ -152,7 +158,9 @@ qtasteKernelClassPath = qtasteKernelClassPath.replace("/", _os.sep)
 # get TestBedConfiguration instance testbedConfig from the TESTBED environment variable
 testbedConfig = _getTestbedConfig()
 
-controlScriptID = 1
+#--------------------------------------------------------------
+# Generic Classes
+#--------------------------------------------------------------
 
 class ControlScript(object):
 	""" Control script """
@@ -205,17 +213,26 @@ class ControlScript(object):
 
 class ControlAction(object):
 	""" Control script action """
+
+    # Id of the next control action
+	NextControlActionId = 1		
+	
+    # shell scripts directory
+	shellScriptsDirectory = qtasteRootDirectory + "tools/"
+	
+	# shell script extension
+	shellScriptExtension = _IF(_OS.getType() == _OS.Type.WINDOWS, ".cmd", ".sh")
+
 	def __init__(self, description, active=True):
 		"""
 		Initialize ControlAction object.
 		@param description string describing the control action
 		"""
-		global controlScriptID
 		self.callerScript = traceback.format_stack()[0].split("\"")[1]
 		self.description = description
-		self.caID = controlScriptID
 		self.active = active
-		controlScriptID += 1
+		self.caID = NextControlActionId
+		NextControlActionId += 1
 		
 	def start(self):
 		""" Method called on start, to be overridden by subclasses """
@@ -253,7 +270,6 @@ class ControlAction(object):
 		error = _Exec().exec(command)
 		if error:
 			_sys.exit(error)
-	executeCommand = staticmethod(executeCommand)
 
 	def executeShellScript(name, arguments=None):
 		""" 
@@ -272,7 +288,6 @@ class ControlAction(object):
 			if arguments:
 				shellCommand += " " + arguments;
 			ControlAction.executeCommand(shellCommand)
-	executeShellScript = staticmethod(executeShellScript)
 	
 	def escapeArgument(argument):
 		"""
@@ -285,25 +300,23 @@ class ControlAction(object):
 			return argument.replace('"', r'\"')
 		else:
 			return argument
-	escapeArgument = staticmethod(escapeArgument)
 
-	# shell scripts directory
-	shellScriptsDirectory = qtasteRootDirectory + "tools/"
-	
-	# shell script extension
-	shellScriptExtension = _IF(_OS.getType() == _OS.Type.WINDOWS, ".cmd", ".sh")
+    # static methods
+	executeCommand     = staticmethod(executeCommand)
+	executeShellScript = staticmethod(executeShellScript)
+	escapeArgument     = staticmethod(escapeArgument)
 
 class Command(ControlAction):
    """ Control script action for executing a command. """
-   def __init__(self, description, startCommand, stopCommand):
+   def __init__(self, description, startCommand=None, stopCommand=None):
       """
       Initializes Command object.
-      @param startCommand command to execute on start (string or strings list)
-      @param stopCommand command to execute on stop (string or strings list)
+      @param startCommand command to execute on start (string or strings list) (optional)
+      @param stopCommand command to execute on stop (string or strings list) (optional)
       """
       ControlAction.__init__(self, description)
       self.startCommand = startCommand
-      self.stopCommand = stopCommand
+      self.stopCommand  = stopCommand
 
    def execute(self, command):
       print 'Executing "%s"' % command;
@@ -311,10 +324,16 @@ class Command(ControlAction):
       print
 
    def start(self):
-      self.execute(self.startCommand)
+      if self.startCommand:
+         self.execute(self.startCommand)
 
    def stop(self):
-      self.execute(self.stopCommand)
+      if self.stopCommand:
+         self.execute(self.stopCommand)
+
+#--------------------------------------------------------------
+# Specific Classes
+#--------------------------------------------------------------
 
 class JavaProcess(ControlAction):
 	""" Control script action for starting/stopping a Java process """
@@ -334,74 +353,69 @@ class JavaProcess(ControlAction):
 		@param useJavaGUI enable the javagui service to enable remote javagui accessibility 
 		"""
 		ControlAction.__init__(self, description, active)
-		self.callerScript = traceback.format_stack()[0].split("\"")[1]
+
+		self.callerScript   = traceback.format_stack()[0].split("\"")[1]
 		self.mainClassOrJar = mainClassOrJar
-		self.args = args
-		if args is None:
-			self.mainWithArgs = mainClassOrJar
-		else:
-			self.mainWithArgs = mainClassOrJar + ' ' + args
-		if _OS.getType() != _OS.Type.WINDOWS:
-			self.workingDir = workingDir
-		else:
-			self.workingDir = workingDir.replace("/", _os.sep)
-		if classPath:
-			if _OS.getType() != _OS.Type.WINDOWS:
-				self.classPath = classPath.replace(";",":")
-			else:
+		self.args           = args
+		self.workingDir     = _os.path.abspath(workingDir)
+		self.mainWithArgs   = mainClassOrJar
+		self.classPath      = classPath
+		self.vmArgs         = vmArgs
+		self.useJacoco      = useJacoco
+		self.useJavaGUI     = useJavaGUI
+        self.jmxPort        = ("%d" % jmxPort) if jmxPort else None
+		self.checkAfter     = ("%d" % checkAfter) if checkAfter else None
+		self.priority       = priority
+        
+        self.normalizeClassPath()
+
+    def normalizeClassPath(self):
+        """ normalize classpath according to the OS type """
+        if self.classPath:
+			if _OS.getType() == _OS.Type.WINDOWS:
 				self.classPath = classPath.replace(":",";")
 				self.classPath = self.classPath.replace("/", _os.sep)
-		else:
-			self.classPath = None
-		self.vmArgs = vmArgs
-# 		if useJacoco:
-# 			jacocoHome = _os.getenv("JACOCO_HOME")
-# 			if not jacocoHome:
-# 				print "WARNING: JACOCO_HOME variable not defined - Jacoco coverage disabled!\n"
-# 			else:
-# 				self.vmArgs += " -javaagent:" + jacocoHome + _os.sep + "lib" + _os.sep + "jacocoagent.jar=append=true,destfile=" + "reports" + _os.sep + description + ".jacoco"
-		self.useJacoco = useJacoco
-# 		if useJavaGUI:
-# 			self.vmArgs += " -javaagent:" + qtasteRootDirectory + "plugins" + _os.sep + "SUT" + _os.sep + "qtaste-javagui-deploy.jar"
-		self.useJavaGUI = useJavaGUI
-		if jmxPort:
-			self.jmxPort = "%d" % jmxPort
-		else:
-			self.jmxPort = None
-		if checkAfter:
-			self.checkAfter = "%d" % checkAfter
-		else:
-			self.checkAfter = None
-		self.priority = priority
+            else:
+				self.classPath = classPath.replace(";",":")
 
 	def dump(self, writer):
-		""" Method called on start. It dump the control action parameter in the writer, to be overridden by subclasses """
+		""" Method called on start. It dumps the control action parameters in the writer, to be overridden by subclasses """
+
 		super(JavaProcess, self).dump(writer)
+
 		if self.args is not None:
 			writer.write(str(self.caID) + ".args=\"" + str(self.args) + "\"\n")
+
 		if self.workingDir is not None:
 			writer.write(str(self.caID) + ".workingDir=\"" + str(self.workingDir) + "\"\n")
+
 		if self.mainClassOrJar is not None:
 			writer.write(str(self.caID) + ".mainClassOrJar=\"" + str(self.mainClassOrJar) + "\"\n")
+
 		if self.classPath is not None:
 			writer.write(str(self.caID) + ".classPath=\"" + str(self.classPath) + "\"\n")
+
 		if self.vmArgs is not None:
 			writer.write(str(self.caID) + ".vmArgs=\"" + str(self.vmArgs) + "\"\n")
+
 		if self.useJacoco:
 			writer.write(str(self.caID) + ".useJacoco=True\n")
 		else:
 			writer.write(str(self.caID) + ".useJacoco=False\n")
+
 		if self.useJavaGUI:
 			writer.write(str(self.caID) + ".useJavaGUI=True\n")
 		else:
 			writer.write(str(self.caID) + ".useJavaGUI=False\n")
+
 		if self.jmxPort is not None:
 			writer.write(str(self.caID) + ".jmxPort=" + str(self.jmxPort) + "\n")
+
 		if self.checkAfter is not None:
 			writer.write(str(self.caID) + ".checkAfter=" + str(self.checkAfter) + "\n")
+
 		if self.priority is not None:
 			writer.write(str(self.caID) + ".priority=\"" + str(self.priority) + "\"\n")
-		pass
 
 	def dumpDataType(self, prefix, writer):
 		""" Method called on start. It dumps the data type. to be overridden by subclasses """

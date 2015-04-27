@@ -71,8 +71,6 @@ public class CampaignLauncher {
 
         // initialize Python interpreter
         Properties properties = new Properties();
-        properties.setProperty("python.home", StaticConfiguration.JYTHON_HOME);
-        properties.setProperty("python.path", StaticConfiguration.JYTHON_LIB);
         PythonInterpreter.initialize(System.getProperties(), properties, new String[]{""});
 
         CampaignManager campaignManager = CampaignManager.getInstance();

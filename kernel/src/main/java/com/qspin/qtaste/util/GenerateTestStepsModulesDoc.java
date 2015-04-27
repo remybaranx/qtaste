@@ -36,8 +36,6 @@ public class GenerateTestStepsModulesDoc {
         try {
             
             Properties properties = new Properties();
-            properties.setProperty("python.home", StaticConfiguration.JYTHON_HOME);
-            properties.setProperty("python.path", StaticConfiguration.FORMATTER_DIR);
             PythonInterpreter.initialize(System.getProperties(), properties, new String[]{""});
    
             StringWriter output = new StringWriter();
@@ -47,14 +45,13 @@ public class GenerateTestStepsModulesDoc {
             interp.setErr(output);
             interp.cleanup();
 
-            //java -cp %JYTHON_HOME%\jython.jar -Dpython.home=%JYTHON_HOME% -Dpython.path=%FORMATTER_DIR% org.python.util.jython %JYTHON_HOME%\Lib\pythondoc.py -f -s -Otestscriptdoc_xmlformatter -Dtestsuite_dir=%TEST_SUITE_DIR% !TEST_SCRIPTS!
             String args = "import sys;sys.argv[1:]= ['" + directory +  "']";
 
             interp.exec(args);
 
             interp.exec("__name__ = '__main__'");
 
-            interp.exec("execfile(r'" + StaticConfiguration.FORMATTER_DIR + "/stepsmoduledoc_xmlformatter.py')");
+            interp.exec("execfile(r'" + StaticConfiguration.TEST_SCRIPT_DOC_TOOLS_DIR + "/stepsmoduledoc_xmlformatter.py')");
 
             interp.cleanup();
             interp = null;

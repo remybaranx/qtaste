@@ -199,8 +199,9 @@ public class NonWrappingTextPane extends JEditorPane /*JTextPane*/ {
                                     for (String dir : pythonLibPath) {
                                         fileSearch.addSearchPath(dir);
                                     }
-                                    fileSearch.addSearchPath(StaticConfiguration.JYTHON_LIB);
-                                    fileSearch.addSearchPath(StaticConfiguration.ADDITIONNAL_JYTHON_LIB);
+//RBA
+                                    fileSearch.addSearchPath(StaticConfiguration.JYTHON_QTASTE_SCRIPTS);
+                                    fileSearch.addSearchPath(StaticConfiguration.ADDITIONAL_JYTHON_LIB);
                                     String importFileName =
                                             fileSearch.getFirstFileFound(selectedText + ".py");
                                     if (importFileName != null) // now open the docfile

@@ -67,8 +67,6 @@ public class SimulatorImpl implements SimulatorMBean {
     public SimulatorImpl() {
         // initialize Python interpreter
         Properties properties = new Properties();
-        properties.setProperty("python.home", StaticConfiguration.JYTHON_HOME);
-        properties.setProperty("python.path", StaticConfiguration.JYTHON_LIB);
         PythonInterpreter.initialize(System.getProperties(), properties, new String[]{""});
 
         // initialize the shutdown hook to terminate application properly
@@ -167,7 +165,6 @@ public class SimulatorImpl implements SimulatorMBean {
 
         mInterpreter = new PythonInterpreter();
         mInterpreter.set("connector", this);
-        mInterpreter.exec("import sys; sys.path.append(r'" + StaticConfiguration.JYTHON_LIB + "')");
         try {
             mInterpreter.exec(script);
             if (mSimulator != null) {

@@ -151,10 +151,6 @@ public class Environment {
 
             // initialize the Python interpreter (used for Doc generation)
             Properties props = new Properties();
-            //Le chemin des librairies python
-
-            props.setProperty("python.home", StaticConfiguration.JYTHON_HOME);
-            props.setProperty("python.path", StaticConfiguration.JYTHON_LIB + File.pathSeparator + StaticConfiguration.TEST_SCRIPT_DOC_TOOLS_DIR);
             PythonInterpreter.initialize(System.getProperties(), props, new String[]{""});
             mMainPanel = new MainPanel(testSuiteDir, numberLoops, loopsInHours);
             mMainPanel.launch();

@@ -222,18 +222,11 @@ public class TestEngine {
 			List<String> scriptEngineCommand = new ArrayList<String>();
 
 			if (scriptFilename.endsWith(".py")) {
-				final String jythonHome = StaticConfiguration.JYTHON_HOME;
-				final String jythonJar = jythonHome + "/jython.jar";
-				final String jythonLib = StaticConfiguration.JYTHON_LIB.trim();
-				final String additionnalJythonLib = StaticConfiguration.ADDITIONNAL_JYTHON_LIB.trim();
 				final String classPath = System.getProperties().getProperty("java.class.path", "").trim();
-				
+
 				scriptEngineCommand.add("java");
-				scriptEngineCommand.add("-Dpython.path=\"" + jythonJar + "\"" + File.pathSeparator + "\"" + jythonLib 
-								 + "\"" + File.pathSeparator + "\"" + additionnalJythonLib + "\"");
 				scriptEngineCommand.add("-cp");
-				scriptEngineCommand.add("\"" + jythonHome + "/../build/jython-engine.jar" + File.pathSeparator
-								 + jythonJar + File.pathSeparator + classPath + "\"");
+				scriptEngineCommand.add("\"" + classPath + "\"");
 				scriptEngineCommand.add("org.python.util.jython");
 
 				logger.trace("script engine command: " + StringUtils.join(scriptEngineCommand, " "));
@@ -526,8 +519,6 @@ public class TestEngine {
 
 			// initialize Python interpreter
 			Properties properties = new Properties();
-			properties.setProperty("python.home", StaticConfiguration.JYTHON_HOME);
-			properties.setProperty("python.path", StaticConfiguration.JYTHON_LIB);
 			PythonInterpreter.initialize(System.getProperties(), properties, new String[] { "" });
 			TestSuite testSuite = DirectoryTestSuite.createDirectoryTestSuite(testSuiteDir);
 			testSuite.setExecutionLoops(numberLoops, loopsInHours);

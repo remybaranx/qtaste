@@ -93,7 +93,6 @@ public class PythonTestScript {
             interp.setOut(output);
             interp.setErr(output);
             interp.cleanup();
-            //java -cp %JYTHON_HOME%\jython.jar -Dpython.home=%JYTHON_HOME% -Dpython.path=%FORMATTER_DIR% org.python.util.jython %JYTHON_HOME%\Lib\pythondoc.py -f -s -Otestscriptdoc_xmlformatter -Dtestsuite_dir=%TEST_SUITE_DIR% !TEST_SCRIPTS!            
             String args = "import sys;sys.argv[1:]= ['-f', '-s', '-Otestscriptdoc_xmlformatter'";
             if (new File(m_TestSuiteDir).getCanonicalFile() == new File("TestSuites").getCanonicalFile()) {
             	args += ",\"-DrootTestSuiteDir=" + m_TestSuiteDir + "\"";
@@ -101,7 +100,7 @@ public class PythonTestScript {
             args+=", r'" + testCasename + "']";
             interp.exec(args);
             interp.exec("__name__ = '__main__'");
-            interp.exec("execfile(r'" + StaticConfiguration.JYTHON_LIB + "/pythondoc.py')");
+            interp.exec("execfile(r'" + StaticConfiguration.JYTHON_QTASTE_SCRIPTS + "/pythondoc.py')");
             interp.cleanup();
             interp = null;
             if (xmlDocFile.exists()) {

@@ -30,12 +30,13 @@ import java.io.IOException;
 public class StaticConfiguration {
 
 	public static final String QTASTE_ROOT = getQTasteRoot();
-	public static final String JYTHON_HOME = QTASTE_ROOT + "/tools/jython/lib";
-	public static final String JYTHON_LIB = JYTHON_HOME + "/Lib";
+	public static final String JYTHON_HOME = QTASTE_ROOT + "/tools/jython";
+	public static final String JYTHON_QTASTE_SCRIPTS = JYTHON_HOME + "/QTasteScripts";
+	public static final String TEST_SCRIPT_DOC_TOOLS_DIR = JYTHON_QTASTE_SCRIPTS + "/TestScriptDoc";
+	public static final String ADDITIONAL_JYTHON_LIB;
 	public static final String TEST_SCRIPT_FILENAME = "TestScript.py";
 	public static final String TEST_DATA_FILENAME = "TestData.csv";
 	public static final String TEST_REQUIREMENTS_FILENAME = "Req.xml";
-	public static final String TEST_SCRIPT_DOC_TOOLS_DIR = QTASTE_ROOT + "/tools/TestScriptDoc";
 	public static final String TEST_SCRIPT_DOC_XML_FILENAME = "TestScript-doc.xml";
 	public static final String TEST_SCRIPT_DOC_HTML_FILENAME = "TestScript-doc.html";
 	public static final String TEST_SUITE_DOC_HTML_FILENAME = "TestSuite-doc.html";
@@ -51,8 +52,6 @@ public class StaticConfiguration {
 	public static final String DEFAULT_TESTSUITES_DIR = "TestSuites";
 	public static final String CAMPAIGN_DIRECTORY = "TestCampaigns";
 	public static final String CAMPAIGN_FILE_EXTENSION = "xml";
-	public static final String FORMATTER_DIR = QTASTE_ROOT + "/tools/TestScriptDoc";
-	public static final String ADDITIONNAL_JYTHON_LIB;
 	public static final String PLUGINS_HOME = QTASTE_ROOT + "/plugins";
 	static {
 		//JYTHON_LIB initialization
@@ -60,7 +59,7 @@ public class StaticConfiguration {
 		if (System.getenv("QTASTE_JYTHON_LIB") != null) {
 			path = System.getenv("QTASTE_JYTHON_LIB");
 		}
-		ADDITIONNAL_JYTHON_LIB = path;
+		ADDITIONAL_JYTHON_LIB = path;
 	}
 
 	/**

@@ -75,19 +75,16 @@ public class GenerateTestSuiteDoc {
         StringWriter outputs = new StringWriter();
         try {
             Properties properties = new Properties();
-            properties.setProperty("python.home", StaticConfiguration.JYTHON_HOME);
-            properties.setProperty("python.path", StaticConfiguration.FORMATTER_DIR);
             PythonInterpreter.initialize(System.getProperties(), properties, new String[]{""});
             PythonInterpreter interp = new PythonInterpreter(new org.python.core.PyStringMap(), new org.python.core.PySystemState());
             interp.setOut(outputs);
             interp.setErr(outputs);
             interp.cleanup();
-            //java -cp %JYTHON_HOME%\jython.jar -Dpython.home=%JYTHON_HOME% -Dpython.path=%FORMATTER_DIR% org.python.util.jython %JYTHON_HOME%\Lib\pythondoc.py -f -s -Otestscriptdoc_xmlformatter -Dtestsuite_dir=%TEST_SUITE_DIR% !TEST_SCRIPTS!
             String args = "import sys;sys.argv[1:]= ['-f', '-s', '-Otestscriptdoc_xmlformatter', '-Dtestsuite_dir=" + testSuiteDir.replace(File.separator, "/") + "'," + testScriptsList.toString().replace(File.separator, "/") + "]";
             System.out.println(args);
             interp.exec(args);
             interp.exec("__name__ = '__main__'");
-            interp.exec("execfile(r'" + StaticConfiguration.JYTHON_HOME + "/Lib/pythondoc.py')");
+            interp.exec("execfile(r'" + StaticConfiguration.JYTHON_QTASTE_SCRIPTS + "/pythondoc.py')");
             interp.cleanup();
             interp = null;
         }
@@ -104,10 +101,14 @@ public class GenerateTestSuiteDoc {
             if (testScriptDir.exists()) {
                 System.out.println("Converting Test Script XML doc to HTML for " + testscript.getParent());
                 File xmlDocFile = new File(testscript.getParent() + "/TestScript-doc.xml");
-
-                String []  a = {"-XSLTC", "-XT", "-IN", xmlDocFile.toString(), "-XSL",
-                         StaticConfiguration.FORMATTER_DIR + "/testscriptdoc_xml2html.xsl",
-                         "-OUT", testscript.getParent() + "/TestScript-doc.html"};
+                String []  a = {"-XSLTC", 
+                				"-XT", 
+                				"-IN", 
+                				xmlDocFile.toString(), 
+                				"-XSL",
+                				StaticConfiguration.TEST_SCRIPT_DOC_TOOLS_DIR + "/testscriptdoc_xml2html.xsl",
+                				"-OUT", 
+                				testscript.getParent() + "/TestScript-doc.html"};
                 org.apache.xalan.xslt.Process.main(a);
                 xmlDocFile.delete();
             } else {
@@ -117,10 +118,24 @@ public class GenerateTestSuiteDoc {
         }
         System.out.println("Converting Test Suite frameset ...");
 
-        String [] b = {"-XSLTC", "-XT", "-IN", testSuiteDir + "/TestSuite-doc.xml", "-XSL", StaticConfiguration.FORMATTER_DIR + "/testsuitedoc_list_xml2html.xsl", "-OUT", testSuiteDir + "/TestSuite-doc-list.html"};
+        String [] b = {"-XSLTC", 
+        			   "-XT", 
+        			   "-IN", 
+        			   testSuiteDir + "/TestSuite-doc.xml", 
+        			   "-XSL", 
+        			   StaticConfiguration.TEST_SCRIPT_DOC_TOOLS_DIR + "/testsuitedoc_list_xml2html.xsl", 
+        			   "-OUT", 
+        			   testSuiteDir + "/TestSuite-doc-list.html"};
         org.apache.xalan.xslt.Process.main(b);
 
-        String [] c = {"-XSLTC", "-XT", "-IN", testSuiteDir + "/TestSuite-doc.xml", "-XSL", StaticConfiguration.FORMATTER_DIR + "/testsuitedoc_summary_xml2html.xsl", "-OUT", testSuiteDir + "/TestSuite-doc-summary.html"};
+        String [] c = {"-XSLTC", 
+        			   "-XT", 
+        			   "-IN", 
+        			   testSuiteDir + "/TestSuite-doc.xml", 
+        			   "-XSL", 
+        			   StaticConfiguration.TEST_SCRIPT_DOC_TOOLS_DIR + "/testsuitedoc_summary_xml2html.xsl", 
+        			   "-OUT", 
+        			   testSuiteDir + "/TestSuite-doc-summary.html"};
         org.apache.xalan.xslt.Process.main(c);
 
         File testSuiteDocXML = new File(testSuiteDir + "/TestSuite-doc.xml");

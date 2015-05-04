@@ -10,13 +10,8 @@ if [%1] == [-help] (
 )
 
 rem remove previous python compilation classes
-pushd ..\tools\jython\lib\Lib\
-del /q *.class
-popd
-
-rem install kernel 3rd party artifacts
-pushd kernel
-call mvn clean -P qtaste-install-3rd-artifacts
+pushd ..\tools\jython\QTasteScripts
+del /q /s *.class
 popd
 
 echo Building qtaste ...

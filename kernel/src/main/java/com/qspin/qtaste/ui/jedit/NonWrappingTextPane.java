@@ -199,7 +199,6 @@ public class NonWrappingTextPane extends JEditorPane /*JTextPane*/ {
                                     for (String dir : pythonLibPath) {
                                         fileSearch.addSearchPath(dir);
                                     }
-//RBA
                                     fileSearch.addSearchPath(StaticConfiguration.JYTHON_QTASTE_SCRIPTS);
                                     fileSearch.addSearchPath(StaticConfiguration.ADDITIONAL_JYTHON_LIB);
                                     String importFileName =

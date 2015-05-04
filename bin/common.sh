@@ -4,10 +4,9 @@
 #
 
 export QTASTE_ROOT="$(dirname "$0")/.."
-export QTASTE_JYTHON_SCRIPTS="$QTASTE_ROOT/tools/jython/QTasteScripts"
-export QTASTE_CLASSPATH="$QTASTE_ROOT/plugins/*:$QTASTE_ROOT/kernel/target/qtaste-kernel-deploy.jar"
-export JYTHONPATH="$QTASTE_JYTHON_SCRIPTS:$QTASTE_JYTHON_SCRIPTS/TestScriptDoc:QTASTE_JYTHON_SCRIPTS/TestProcedureDoc"
-export PATH=$PATH:"$QTASTE_ROOT/lib"
+export QTASTE_JYTHON_SCRIPTS="${QTASTE_ROOT}/tools/jython/QTasteScripts"
+export QTASTE_CLASSPATH="${QTASTE_ROOT}/plugins/*:${QTASTE_ROOT}/kernel/target/qtaste-kernel-deploy.jar"
+export JYTHONPATH="${QTASTE_JYTHON_SCRIPTS}:${QTASTE_JYTHON_SCRIPTS}/TestScriptDoc:${QTASTE_JYTHON_SCRIPTS}/TestProcedureDoc"
 
 #
 # Start QTaste without the testapi

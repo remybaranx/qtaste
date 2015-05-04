@@ -32,7 +32,10 @@ if len(_sys.argv) <= 1 or _sys.argv[1].lower() not in ['start', 'stop']:
 	_sys.exit(-1)
 
 # the control script action 'start' or 'stop' is provided as argument of the script
-controlScriptAction = _sys.argv[1].lower()
+start = (_sys.argv[1].lower() == 'start')
+
+# others scripts arguments
+arguments = _sys.argv[2:]
 
 # QTaste root directory
 qtasteRootDirectory = _os.path.abspath(_os.getenv("QTASTE_ROOT") + "/")
@@ -74,7 +77,7 @@ class ControlScript(object):
 		self.callerDirectory = caller.replace(self.callerScript, "")
 
 		# execute the control script action		
-		if controlScriptAction == 'start':
+		if start:
 			self.start()
 		else:
 			self.stop()

@@ -110,8 +110,7 @@ class ControlScript(object):
 		for controlAction in self.controlActions:
 			if controlAction.active:
 				if not controlAction.start():
-					break
-#RBA					_sys.exit(-1)
+					_sys.exit(-1)
 	
 	def stop(self):
 		""" 
@@ -293,8 +292,8 @@ class Command(ControlAction):
 		@see ControlAction.dump()
 		"""
 		super(Command, self).dump(writer)
-		self.dumpItem(writer, "startCommand", _normalizeParameter(self.startCommand))
-		self.dumpItem(writer, "stopCommand",  _normalizeParameter(self.stopCommand))
+		self.dumpItem(writer, "startCommand", listifyArguments(self.startCommand))
+		self.dumpItem(writer, "stopCommand",  listifyArguments(self.stopCommand))
 
 	def start(self):
 		""" 
@@ -375,7 +374,7 @@ class NativeProcess(ControlAction):
 		Get the name of the file to store the current process PID.
 		@return a normalized path.
 		"""
-		return _os.path.abspath(_tempfile.gettempdir() + "/qtaste_ca_state_" + str(self.caID) + ".pid")
+		return _os.path.abspath(_tempfile.gettempdir() + "/qtaste_ca_" + str(self.caID) + ".pid")
 
 	def dumpDataType(self, prefix, writer):
 		""" 

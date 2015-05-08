@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><engine_configuration>
+<retry_test_on_fail>true</retry_test_on_fail>
+<reporting>
+		<reporters>
+			<format>XML</format>
+		</reporters>
+
+		<!-- Location of the XML template -->
+		<xml_template>tests/conf/reporting/xml/standard</xml_template>
+
+		<!-- Location of the generated reports -->
+		<generated_report_path>reports</generated_report_path>
+
+	</reporting>
+<log4j_server>
+		<port>4446</port>
+	</log4j_server>
+<version_control>com.qspin.qtaste.util.versioncontrol.impl.DefaultVersionControl</version_control>
+<addons>
+</addons>
+</engine_configuration>

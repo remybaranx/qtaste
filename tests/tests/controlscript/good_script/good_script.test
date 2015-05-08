@@ -1,0 +1,8 @@
+#
+# Check the behaviour of QTaste with a good control script that does nothing
+#
+
+TESTDIR=.
+TESTBED=testbed_with_good_control_script.xml
+TESTSUITE=TestSuite_QTaste
+TESTFUNC="check_output_log;check_steps_result"

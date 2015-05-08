@@ -2,5 +2,8 @@ language: java
 jdk:
 - oraclejdk7
 
-script: ./buildAll.sh
+before_script: ./buildAll.sh
+script:
+    cd tests
+    ./testAll.sh
 

@@ -1,0 +1,10 @@
+<result>
+  <testCase name="Start SUT" testScriptVersion="-" testDataRow=""></testCase>
+  <status result="fail"></status>
+  <steps></steps>
+</result>
+<result>
+  <testCase name="Stop SUT" testScriptVersion="-" testDataRow=""></testCase>
+  <status result="fail"></status>
+  <steps></steps>
+</result>

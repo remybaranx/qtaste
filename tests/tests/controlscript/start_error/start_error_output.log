@@ -1,0 +1,12 @@
+This is a simple control script. It just does nothing and exits with error 1 on start.
+Start parameter is False, additional parameters are []
+Do nothing on stop
+
+This is a simple control script. It just does nothing and exits with error 1 on start.
+Start parameter is True, additional parameters are []
+Exit with error 1 on start
+
+This is a simple control script. It just does nothing and exits with error 1 on start.
+Start parameter is False, additional parameters are []
+Do nothing on stop
+

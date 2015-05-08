@@ -1,0 +1,4 @@
+TESTDIR=demo
+TESTBED=playback.xml
+TESTSUITE=Playback
+TESTFUNC=

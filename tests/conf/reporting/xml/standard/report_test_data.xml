@@ -1,0 +1,5 @@
+<result>
+  <testCase name="###TEST_CASE###" testScriptVersion="###TEST_SCRIPT_VERSION###" testDataRow="###TEST_DATA_ROW###">###TEST_COMMENT###</testCase>
+  <status result="###RESULT###"></status>
+  <steps>###STEPS###</steps>
+</result>

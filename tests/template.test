@@ -1,0 +1,35 @@
+#
+# This is a template to help you to add new tests.
+# To add a new test, you have to :
+# - create a directory in the "tests" directory (you can create subdirectories to structure your tests)
+# - create a .test file using this template
+# - create some expected results file according to the functions you will use to check test results.
+#
+
+# Directory where the test will be launched (ex: demo to launch the playback demo)
+# This directory must contain the Testbeds and TestSuites directories for this test
+TESTDIR=
+
+# Testbed file to use for this test (without "Testbeds/")
+TESTBED=
+
+# Test suite directory to use for this test (without "TestSuites/")
+TESTSUITE=
+
+# A list of functions to check test results. 
+# This list must be surrounded by quotes. (ex: "check_output_log;check_steps_result")
+#
+# Some functions are provided by the testAll.sh script :
+#
+# - default_check_result : compare the log-result.xml generated after the test with the expected one (stored in tests/<TESTNAME>_results.xml)
+# - check_steps_result   : compare the steps results with the expected one (stored in tests/<TESTNAME>_steps_result.txt)
+#                          you can generate the expected step results file using the script in tools/extract_steps_result.sh
+# - check_output_log     : compare the output.log generated after the test with the expected one (stored in tests/<TESTNAME>_output.log)
+#
+# You can also write your own functions in this file. These functions will received the TESTNAME as parameter.
+# You have also access to all variables defined in testAll.sh
+TESTFUNC=
+
+# You can specify a timeout for this test. By default, it will set to 300 seconds
+# After this timeout, the process will be killed if it's still running.
+TESTTIMEOUT=

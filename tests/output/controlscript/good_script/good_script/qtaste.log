@@ -1,0 +1,1421 @@
+2015-05-08 10:56:08,401 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:442  - QTaste kernel version: qtaste-kernel-2.2.3-SNAPSHOT (build SCM revision: 35e51, 2015-05-04 13:18:25)
+2015-05-08 10:56:08,479 DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.java:449  - ConfigurationUtils.locate(): base is null, name is /home/remy/Workspaces/QSPIN/QTaste/qtaste/conf/engine.xml
+2015-05-08 10:56:08,480 DEBUG org.apache.commons.configuration.DefaultFileSystem - DefaultFileSystem.java:281  - Could not locate file /home/remy/Workspaces/QSPIN/QTaste/qtaste/conf/engine.xml at null: no protocol: /home/remy/Workspaces/QSPIN/QTaste/qtaste/conf/engine.xml
+2015-05-08 10:56:08,481 DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.java:471  - Loading configuration from the absolute path /home/remy/Workspaces/QSPIN/QTaste/qtaste/conf/engine.xml
+2015-05-08 10:56:08,605 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:443  - QTaste testAPI version: undefined
+2015-05-08 10:56:08,606 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:464  - Using /home/remy/Workspaces/QSPIN/QTaste/qtaste/tests/conf/engine.xml as engine configuration file
+2015-05-08 10:56:08,606 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:460  - Using Testbeds/testbed_with_good_control_script.xml as testbed configuration file
+2015-05-08 10:56:08,606 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:456  - Using TestSuites/TestSuite_QTaste as test suite directory
+2015-05-08 10:56:08,607 DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.java:449  - ConfigurationUtils.locate(): base is null, name is /home/remy/Workspaces/QSPIN/QTaste/qtaste/tests/conf/engine.xml
+2015-05-08 10:56:08,608 DEBUG org.apache.commons.configuration.DefaultFileSystem - DefaultFileSystem.java:281  - Could not locate file /home/remy/Workspaces/QSPIN/QTaste/qtaste/tests/conf/engine.xml at null: no protocol: /home/remy/Workspaces/QSPIN/QTaste/qtaste/tests/conf/engine.xml
+2015-05-08 10:56:08,608 DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.java:471  - Loading configuration from the absolute path /home/remy/Workspaces/QSPIN/QTaste/qtaste/tests/conf/engine.xml
+2015-05-08 10:56:08,611 INFO  com.qspin.qtaste.log.Log4jServer - Log4jServer.java:69   - Starting log4j server on port 4446
+2015-05-08 10:56:09,178 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_01/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_01/Req.xml
+2015-05-08 10:56:09,191 DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.java:449  - ConfigurationUtils.locate(): base is null, name is Testbeds/testbed_with_good_control_script.xml
+2015-05-08 10:56:09,192 DEBUG org.apache.commons.configuration.DefaultFileSystem - DefaultFileSystem.java:281  - Could not locate file Testbeds/testbed_with_good_control_script.xml at null: no protocol: Testbeds/testbed_with_good_control_script.xml
+2015-05-08 10:56:09,192 DEBUG org.apache.commons.configuration.ConfigurationUtils - ConfigurationUtils.java:493  - Loading configuration from the path Testbeds/testbed_with_good_control_script.xml
+2015-05-08 10:56:09,200 INFO  com.qspin.qtaste.config.TestBedConfiguration - TestBedConfiguration.java:50   - Loaded testbed configuration file Testbeds/testbed_with_good_control_script.xml
+2015-05-08 10:56:09,204 INFO  com.qspin.qtaste.kernel.testapi.ComponentsLoader - ComponentsLoader.java:206  - Loading components for platform enginetest from jar:file:/home/remy/Workspaces/QSPIN/QTaste/qtaste/kernel/target/qtaste-kernel-deploy.jar!/com/qspin/qtaste/testapi/impl/enginetest
+2015-05-08 10:56:09,271 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method checkData1To5 has been registered to component EngineTest
+2015-05-08 10:56:09,271 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method throwRuntimeException has been registered to component EngineTest
+2015-05-08 10:56:09,271 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method checkDataIsInteger has been registered to component EngineTest
+2015-05-08 10:56:09,272 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method neverReturn has been registered to component EngineTest
+2015-05-08 10:56:09,272 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method checkDataIsDouble has been registered to component EngineTest
+2015-05-08 10:56:09,273 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method checkDataIsBoolean has been registered to component EngineTest
+2015-05-08 10:56:09,273 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method throwNoException has been registered to component EngineTest
+2015-05-08 10:56:09,273 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method throwQTasteTestFailException has been registered to component EngineTest
+2015-05-08 10:56:09,274 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method throwQTasteException has been registered to component EngineTest
+2015-05-08 10:56:09,274 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method returnDataAsString has been registered to component EngineTest
+2015-05-08 10:56:09,274 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method returnDataAsInteger has been registered to component EngineTest
+2015-05-08 10:56:09,275 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method returnDataAsDouble has been registered to component EngineTest
+2015-05-08 10:56:09,275 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method returnDataAsBoolean has been registered to component EngineTest
+2015-05-08 10:56:09,275 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method throwQTasteDataException has been registered to component EngineTest
+2015-05-08 10:56:09,276 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method sleep has been registered to component EngineTest
+2015-05-08 10:56:09,277 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method checkInstanceId has been registered to component MultipleInstancesTest
+2015-05-08 10:56:09,278 TRACE com.qspin.qtaste.kernel.testapi.TestAPIImpl - TestAPIImpl.java:78   - Method getInstanceId has been registered to component MultipleInstancesTest
+2015-05-08 10:56:11,024 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_02/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_02/Req.xml
+2015-05-08 10:56:11,025 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_03/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_03/Req.xml
+2015-05-08 10:56:11,026 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_04/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_04/Req.xml
+2015-05-08 10:56:11,026 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_05/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_05/Req.xml
+2015-05-08 10:56:11,027 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_IMPORT/QTASTE_IMPORT_01/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_IMPORT/QTASTE_IMPORT_01/Req.xml
+2015-05-08 10:56:11,027 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_01/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_01/Req.xml
+2015-05-08 10:56:11,028 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_02/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_02/Req.xml
+2015-05-08 10:56:11,028 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_03/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_03/Req.xml
+2015-05-08 10:56:11,029 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_04/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_04/Req.xml
+2015-05-08 10:56:11,029 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_05/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_05/Req.xml
+2015-05-08 10:56:11,029 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_06/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_06/Req.xml
+2015-05-08 10:56:11,030 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_07/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_07/Req.xml
+2015-05-08 10:56:11,030 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_08/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_08/Req.xml
+2015-05-08 10:56:11,030 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_09/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_09/Req.xml
+2015-05-08 10:56:11,031 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_10/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_10/Req.xml
+2015-05-08 10:56:11,031 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_11/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_11/Req.xml
+2015-05-08 10:56:11,032 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_01/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_01/Req.xml
+2015-05-08 10:56:11,032 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_02/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_02/Req.xml
+2015-05-08 10:56:11,032 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_03/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_03/Req.xml
+2015-05-08 10:56:11,033 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_04/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_04/Req.xml
+2015-05-08 10:56:11,033 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_05/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_05/Req.xml
+2015-05-08 10:56:11,034 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/Req.xml
+2015-05-08 10:56:11,034 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_07/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_07/Req.xml
+2015-05-08 10:56:11,035 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_01/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_01/Req.xml
+2015-05-08 10:56:11,035 INFO  com.qspin.qtaste.testsuite.impl.DirectoryTestSuite - DirectoryTestSuite.java:150  - Adding test case TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_02/TestScript.py TestData.csv TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_02/Req.xml
+2015-05-08 10:56:11,053 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:232  - script engine command: java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython
+2015-05-08 10:56:11,053 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:250  - Stopping SUT using command 'Testbeds/ControlScripts/do_nothing.py stop'
+2015-05-08 10:56:11,054 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:264  - FULL COMMAND : 'java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython Testbeds/ControlScripts/do_nothing.py stop'
+2015-05-08 10:56:15,564 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:279  - SUT stopped
+2015-05-08 10:56:15,565 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:232  - script engine command: java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython
+2015-05-08 10:56:15,566 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:250  - Starting SUT using command 'Testbeds/ControlScripts/do_nothing.py start'
+2015-05-08 10:56:15,566 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:264  - FULL COMMAND : 'java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython Testbeds/ControlScripts/do_nothing.py start'
+2015-05-08 10:56:20,373 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:279  - SUT started
+2015-05-08 10:56:20,374 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:376  - Starting TestEngine
+2015-05-08 10:56:20,375 INFO  com.qspin.qtaste.datacollection.collection.ProbeManager - ProbeManager.java:54   - Starting ProbeManager:
+2015-05-08 10:56:20,375 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_DATA_01 (row 1)
+2015-05-08 10:56:20,376 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:56:20,430 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:56:20,433 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:56:20,434 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (Step2)
+2015-05-08 10:56:20,436 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (Step2) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:56:20,436 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (Step3)
+2015-05-08 10:56:20,437 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (Step3) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:56:20,438 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 4 (Step4)
+2015-05-08 10:56:20,439 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 4 (Step4) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:56:20,440 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 5 (Step5)
+2015-05-08 10:56:20,441 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 5 (Step5) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:56:20,441 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 6 (Step6)
+2015-05-08 10:56:20,443 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 6 (Step6) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:56:20,446 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_DATA_02 (row 1)
+2015-05-08 10:56:20,446 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:137  - Using test timeout of 5 seconds
+2015-05-08 10:56:20,470 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:56:20,471 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:56:20,472 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (Step2)
+2015-05-08 10:56:20,478 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.neverReturn()
+2015-05-08 10:56:25,449 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:318  - Task thread timed out!
+2015-05-08 10:56:25,450 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:330  - Aborting test thread!
+2015-05-08 10:56:25,456 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (Step2) - status: FAIL - elapsed time: 4.979 seconds
+2015-05-08 10:56:25,468 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: java.lang.ThreadDeath: java.lang.ThreadDeath in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_02/TestScript.py", line 48, in <module>
+    doStep(Step2)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_02/TestScript.py", line 45, in Step2
+    testAPI.getEngineTest().neverReturn()
+  File "embedded_jython", line 72, in neverReturn
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+java.lang.ThreadDeath
+	at java.lang.Thread.stop(Thread.java:836)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.abort(TestScript.java:331)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.waitForEnd(TestScript.java:319)
+	at com.qspin.qtaste.testsuite.TestScript.execute(TestScript.java:162)
+	at com.qspin.qtaste.testsuite.impl.DirectoryTestSuite.executeOnce(DirectoryTestSuite.java:112)
+	at com.qspin.qtaste.testsuite.TestSuite.execute(TestSuite.java:110)
+	at com.qspin.qtaste.kernel.engine.TestEngine.execute(TestEngine.java:155)
+	at com.qspin.qtaste.kernel.engine.TestEngine.execute(TestEngine.java:131)
+	at com.qspin.qtaste.kernel.engine.TestEngine.main(TestEngine.java:525)
+
+java.lang.ThreadDeath: java.lang.ThreadDeath
+
+	at org.python.core.PyException.doRaise(PyException.java:200)
+	at org.python.core.Py.makeException(Py.java:1239)
+	at org.python.core.Py.makeException(Py.java:1243)
+	at org.python.core.Py.makeException(Py.java:1247)
+	at org.python.core.Py.makeException(Py.java:1251)
+	at org.python.pycode._pyx2.doStep$1(embedded_jython:47)
+	at org.python.pycode._pyx2.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:301)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:127)
+	at org.python.core.PyFunction.__call__(PyFunction.java:317)
+	at org.python.pycode._pyx15.f$0(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_02/TestScript.py:48)
+	at org.python.pycode._pyx15.call_function(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_02/TestScript.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx14.f$0(embedded_jython:1)
+	at org.python.pycode._pyx14.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:56:25,468 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_02/TestScript.py line 48
+2015-05-08 10:56:25,471 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:112  - SUT has to be restarted
+2015-05-08 10:56:25,471 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:313  - Restarting SUT
+2015-05-08 10:56:25,474 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:232  - script engine command: java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython
+2015-05-08 10:56:25,474 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:250  - Stopping SUT using command 'Testbeds/ControlScripts/do_nothing.py stop -restart true'
+2015-05-08 10:56:25,475 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:264  - FULL COMMAND : 'java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython Testbeds/ControlScripts/do_nothing.py stop -restart true'
+2015-05-08 10:56:29,881 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:279  - SUT stopped
+2015-05-08 10:56:29,882 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:232  - script engine command: java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython
+2015-05-08 10:56:29,882 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:250  - Starting SUT using command 'Testbeds/ControlScripts/do_nothing.py start -restart true'
+2015-05-08 10:56:29,882 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:264  - FULL COMMAND : 'java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython Testbeds/ControlScripts/do_nothing.py start -restart true'
+2015-05-08 10:56:33,988 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:279  - SUT started
+2015-05-08 10:56:33,991 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:122  - Retrying test script: QTASTE_DATA_02 (row 1) after SUT restart
+2015-05-08 10:56:33,991 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:137  - Using test timeout of 5 seconds
+2015-05-08 10:56:34,010 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:56:34,011 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:56:34,012 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (Step2)
+2015-05-08 10:56:34,013 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.neverReturn()
+2015-05-08 10:56:38,995 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:318  - Task thread timed out!
+2015-05-08 10:56:38,996 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:330  - Aborting test thread!
+2015-05-08 10:56:38,998 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (Step2) - status: FAIL - elapsed time: 4.985 seconds
+2015-05-08 10:56:39,005 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: java.lang.ThreadDeath: java.lang.ThreadDeath in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_02/TestScript.py", line 48, in <module>
+    doStep(Step2)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_02/TestScript.py", line 45, in Step2
+    testAPI.getEngineTest().neverReturn()
+  File "embedded_jython", line 72, in neverReturn
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+java.lang.ThreadDeath
+	at java.lang.Thread.stop(Thread.java:836)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.abort(TestScript.java:331)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.waitForEnd(TestScript.java:319)
+	at com.qspin.qtaste.testsuite.TestScript.execute(TestScript.java:162)
+	at com.qspin.qtaste.testsuite.impl.DirectoryTestSuite.executeOnce(DirectoryTestSuite.java:112)
+	at com.qspin.qtaste.testsuite.TestSuite.execute(TestSuite.java:110)
+	at com.qspin.qtaste.kernel.engine.TestEngine.execute(TestEngine.java:155)
+	at com.qspin.qtaste.kernel.engine.TestEngine.execute(TestEngine.java:131)
+	at com.qspin.qtaste.kernel.engine.TestEngine.main(TestEngine.java:525)
+
+java.lang.ThreadDeath: java.lang.ThreadDeath
+
+	at org.python.core.PyException.doRaise(PyException.java:200)
+	at org.python.core.Py.makeException(Py.java:1239)
+	at org.python.core.Py.makeException(Py.java:1243)
+	at org.python.core.Py.makeException(Py.java:1247)
+	at org.python.core.Py.makeException(Py.java:1251)
+	at org.python.pycode._pyx2.doStep$1(embedded_jython:47)
+	at org.python.pycode._pyx2.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:301)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:127)
+	at org.python.core.PyFunction.__call__(PyFunction.java:317)
+	at org.python.pycode._pyx21.f$0(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_02/TestScript.py:48)
+	at org.python.pycode._pyx21.call_function(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_02/TestScript.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx20.f$0(embedded_jython:1)
+	at org.python.pycode._pyx20.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:56:39,006 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_02/TestScript.py line 48
+2015-05-08 10:56:39,013 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:112  - SUT has to be restarted
+2015-05-08 10:56:39,013 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:313  - Restarting SUT
+2015-05-08 10:56:39,016 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:232  - script engine command: java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython
+2015-05-08 10:56:39,016 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:250  - Stopping SUT using command 'Testbeds/ControlScripts/do_nothing.py stop -restart true'
+2015-05-08 10:56:39,017 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:264  - FULL COMMAND : 'java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython Testbeds/ControlScripts/do_nothing.py stop -restart true'
+2015-05-08 10:56:43,623 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:279  - SUT stopped
+2015-05-08 10:56:43,624 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:232  - script engine command: java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython
+2015-05-08 10:56:43,624 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:250  - Starting SUT using command 'Testbeds/ControlScripts/do_nothing.py start -restart true'
+2015-05-08 10:56:43,624 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:264  - FULL COMMAND : 'java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython Testbeds/ControlScripts/do_nothing.py start -restart true'
+2015-05-08 10:56:47,729 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:279  - SUT started
+2015-05-08 10:56:47,733 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_DATA_03 (row 1)
+2015-05-08 10:56:47,734 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:56:47,751 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:56:47,752 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.neverReturn()
+2015-05-08 10:57:47,737 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:318  - Task thread timed out!
+2015-05-08 10:57:47,738 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:330  - Aborting test thread!
+2015-05-08 10:57:47,739 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: FAIL - elapsed time: 59.988 seconds
+2015-05-08 10:57:47,742 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: java.lang.ThreadDeath: java.lang.ThreadDeath in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_03/TestScript.py", line 39, in <module>
+    doStep(Step1)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_03/TestScript.py", line 37, in Step1
+    testAPI.getEngineTest().neverReturn()
+  File "embedded_jython", line 72, in neverReturn
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+java.lang.ThreadDeath
+	at java.lang.Thread.stop(Thread.java:836)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.abort(TestScript.java:331)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.waitForEnd(TestScript.java:319)
+	at com.qspin.qtaste.testsuite.TestScript.execute(TestScript.java:162)
+	at com.qspin.qtaste.testsuite.impl.DirectoryTestSuite.executeOnce(DirectoryTestSuite.java:112)
+	at com.qspin.qtaste.testsuite.TestSuite.execute(TestSuite.java:110)
+	at com.qspin.qtaste.kernel.engine.TestEngine.execute(TestEngine.java:155)
+	at com.qspin.qtaste.kernel.engine.TestEngine.execute(TestEngine.java:131)
+	at com.qspin.qtaste.kernel.engine.TestEngine.main(TestEngine.java:525)
+
+java.lang.ThreadDeath: java.lang.ThreadDeath
+
+	at org.python.core.PyException.doRaise(PyException.java:200)
+	at org.python.core.Py.makeException(Py.java:1239)
+	at org.python.core.Py.makeException(Py.java:1243)
+	at org.python.core.Py.makeException(Py.java:1247)
+	at org.python.core.Py.makeException(Py.java:1251)
+	at org.python.pycode._pyx2.doStep$1(embedded_jython:47)
+	at org.python.pycode._pyx2.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:301)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:127)
+	at org.python.core.PyFunction.__call__(PyFunction.java:317)
+	at org.python.pycode._pyx27.f$0(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_03/TestScript.py:39)
+	at org.python.pycode._pyx27.call_function(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_03/TestScript.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx26.f$0(embedded_jython:1)
+	at org.python.pycode._pyx26.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:57:47,742 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_03/TestScript.py line 39
+2015-05-08 10:57:47,746 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:112  - SUT has to be restarted
+2015-05-08 10:57:47,747 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:313  - Restarting SUT
+2015-05-08 10:57:47,750 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:232  - script engine command: java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython
+2015-05-08 10:57:47,750 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:250  - Stopping SUT using command 'Testbeds/ControlScripts/do_nothing.py stop -restart true'
+2015-05-08 10:57:47,750 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:264  - FULL COMMAND : 'java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython Testbeds/ControlScripts/do_nothing.py stop -restart true'
+2015-05-08 10:57:52,560 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:279  - SUT stopped
+2015-05-08 10:57:52,561 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:232  - script engine command: java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython
+2015-05-08 10:57:52,562 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:250  - Starting SUT using command 'Testbeds/ControlScripts/do_nothing.py start -restart true'
+2015-05-08 10:57:52,563 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:264  - FULL COMMAND : 'java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython Testbeds/ControlScripts/do_nothing.py start -restart true'
+2015-05-08 10:57:57,272 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:279  - SUT started
+2015-05-08 10:57:57,275 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:122  - Retrying test script: QTASTE_DATA_03 (row 1) after SUT restart
+2015-05-08 10:57:57,275 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:57:57,307 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:57:57,309 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.neverReturn()
+2015-05-08 10:58:57,277 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:318  - Task thread timed out!
+2015-05-08 10:58:57,278 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:330  - Aborting test thread!
+2015-05-08 10:58:57,280 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: FAIL - elapsed time: 59.972 seconds
+2015-05-08 10:58:57,290 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: java.lang.ThreadDeath: java.lang.ThreadDeath in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_03/TestScript.py", line 39, in <module>
+    doStep(Step1)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_03/TestScript.py", line 37, in Step1
+    testAPI.getEngineTest().neverReturn()
+  File "embedded_jython", line 72, in neverReturn
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+java.lang.ThreadDeath
+	at java.lang.Thread.stop(Thread.java:836)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.abort(TestScript.java:331)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.waitForEnd(TestScript.java:319)
+	at com.qspin.qtaste.testsuite.TestScript.execute(TestScript.java:162)
+	at com.qspin.qtaste.testsuite.impl.DirectoryTestSuite.executeOnce(DirectoryTestSuite.java:112)
+	at com.qspin.qtaste.testsuite.TestSuite.execute(TestSuite.java:110)
+	at com.qspin.qtaste.kernel.engine.TestEngine.execute(TestEngine.java:155)
+	at com.qspin.qtaste.kernel.engine.TestEngine.execute(TestEngine.java:131)
+	at com.qspin.qtaste.kernel.engine.TestEngine.main(TestEngine.java:525)
+
+java.lang.ThreadDeath: java.lang.ThreadDeath
+
+	at org.python.core.PyException.doRaise(PyException.java:200)
+	at org.python.core.Py.makeException(Py.java:1239)
+	at org.python.core.Py.makeException(Py.java:1243)
+	at org.python.core.Py.makeException(Py.java:1247)
+	at org.python.core.Py.makeException(Py.java:1251)
+	at org.python.pycode._pyx2.doStep$1(embedded_jython:47)
+	at org.python.pycode._pyx2.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:301)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:127)
+	at org.python.core.PyFunction.__call__(PyFunction.java:317)
+	at org.python.pycode._pyx33.f$0(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_03/TestScript.py:39)
+	at org.python.pycode._pyx33.call_function(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_03/TestScript.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx32.f$0(embedded_jython:1)
+	at org.python.pycode._pyx32.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:58:57,290 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_03/TestScript.py line 39
+2015-05-08 10:58:57,295 DEBUG com.qspin.qtaste.testsuite.impl.TestDataImpl - TestDataImpl.java:248  - Loaded file: TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_DATA/QTASTE_DATA_04/data/data.txt size:37
+2015-05-08 10:58:57,296 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:112  - SUT has to be restarted
+2015-05-08 10:58:57,296 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:313  - Restarting SUT
+2015-05-08 10:58:57,299 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:232  - script engine command: java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython
+2015-05-08 10:58:57,299 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:250  - Stopping SUT using command 'Testbeds/ControlScripts/do_nothing.py stop -restart true'
+2015-05-08 10:58:57,300 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:264  - FULL COMMAND : 'java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython Testbeds/ControlScripts/do_nothing.py stop -restart true'
+2015-05-08 10:59:01,916 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:279  - SUT stopped
+2015-05-08 10:59:01,917 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:232  - script engine command: java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython
+2015-05-08 10:59:01,917 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:250  - Starting SUT using command 'Testbeds/ControlScripts/do_nothing.py start -restart true'
+2015-05-08 10:59:01,917 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:264  - FULL COMMAND : 'java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython Testbeds/ControlScripts/do_nothing.py start -restart true'
+2015-05-08 10:59:06,330 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:279  - SUT started
+2015-05-08 10:59:06,333 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_DATA_04 (row 1)
+2015-05-08 10:59:06,333 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:137  - Using test timeout of 240 seconds
+2015-05-08 10:59:06,353 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:06,355 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,357 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_DATA_05 (row 1)
+2015-05-08 10:59:06,357 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,377 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:06,378 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:06,379 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (Step2)
+2015-05-08 10:59:06,380 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (Step2) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:06,382 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_IMPORT_01 (row 1)
+2015-05-08 10:59:06,382 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,399 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - Python syntax error in file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_IMPORT/QTASTE_IMPORT_01/TestScript.py at line 34, column 12:
+	if myValue eq True:
+
+2015-05-08 10:59:06,402 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_01 (row 1)
+2015-05-08 10:59:06,402 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,429 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:06,430 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.throwNoException()
+2015-05-08 10:59:06,430 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,431 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (Step2)
+2015-05-08 10:59:06,432 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.throwQTasteTestFailException()
+2015-05-08 10:59:06,433 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (Step2) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,433 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (Step3)
+2015-05-08 10:59:06,434 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.throwQTasteDataException()
+2015-05-08 10:59:06,435 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (Step3) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,435 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 4 (Step4)
+2015-05-08 10:59:06,436 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.throwQTasteException()
+2015-05-08 10:59:06,437 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 4 (Step4) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,438 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 5 (Step5)
+2015-05-08 10:59:06,439 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.throwQTasteTestFailException()
+2015-05-08 10:59:06,439 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 5 (Step5) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,440 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 6 (Step6)
+2015-05-08 10:59:06,441 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.throwQTasteDataException()
+2015-05-08 10:59:06,442 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 6 (Step6) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,445 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_02 (row 1)
+2015-05-08 10:59:06,446 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,466 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:06,468 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.throwQTasteTestFailException()
+2015-05-08 10:59:06,468 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: FAIL - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,472 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteTestFailException: com.qspin.qtaste.testsuite.QTasteTestFailException: This verb always fails! in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_02/TestScript.py", line 46, in <module>
+    doStep(Step1)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_02/TestScript.py", line 36, in Step1
+    testAPI.getEngineTest().throwQTasteTestFailException()
+  File "embedded_jython", line 92, in throwQTasteTestFailException
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+	at com.qspin.qtaste.testapi.impl.enginetest.EngineTestImpl.throwQTasteTestFailException(EngineTestImpl.java:51)
+
+2015-05-08 10:59:06,472 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_02/TestScript.py line 47
+2015-05-08 10:59:06,476 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_03 (row 1)
+2015-05-08 10:59:06,477 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:137  - Using test timeout of 5 seconds
+2015-05-08 10:59:06,506 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "<string>", line None
+SyntaxError: Illegal character in file '/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_03/TestScript.py' for encoding 'utf-8'
+
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:212)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "<string>", line None
+SyntaxError: Illegal character in file '/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_03/TestScript.py' for encoding 'utf-8'
+
+	at org.python.core.Py.SyntaxError(Py.java:166)
+	at org.python.core.ParserFacade.fixParseError(ParserFacade.java:102)
+	at org.python.core.ParserFacade.parse(ParserFacade.java:184)
+	at org.python.core.Py.compile_flags(Py.java:1731)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:514)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx67.f$0(embedded_jython:1)
+	at org.python.pycode._pyx67.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:59:06,506 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file embedded_jython line 1
+2015-05-08 10:59:06,512 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_03 (row 2)
+2015-05-08 10:59:06,512 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:137  - Using test timeout of 5 seconds
+2015-05-08 10:59:06,539 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "<string>", line None
+SyntaxError: Illegal character in file '/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_03/TestScript.py' for encoding 'utf-8'
+
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:212)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "<string>", line None
+SyntaxError: Illegal character in file '/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_03/TestScript.py' for encoding 'utf-8'
+
+	at org.python.core.Py.SyntaxError(Py.java:166)
+	at org.python.core.ParserFacade.fixParseError(ParserFacade.java:102)
+	at org.python.core.ParserFacade.parse(ParserFacade.java:184)
+	at org.python.core.Py.compile_flags(Py.java:1731)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:514)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx72.f$0(embedded_jython:1)
+	at org.python.pycode._pyx72.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:59:06,540 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file embedded_jython line 1
+2015-05-08 10:59:06,544 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_03 (row 3)
+2015-05-08 10:59:06,545 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:137  - Using test timeout of 5 seconds
+2015-05-08 10:59:06,567 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "<string>", line None
+SyntaxError: Illegal character in file '/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_03/TestScript.py' for encoding 'utf-8'
+
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:212)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "<string>", line None
+SyntaxError: Illegal character in file '/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_03/TestScript.py' for encoding 'utf-8'
+
+	at org.python.core.Py.SyntaxError(Py.java:166)
+	at org.python.core.ParserFacade.fixParseError(ParserFacade.java:102)
+	at org.python.core.ParserFacade.parse(ParserFacade.java:184)
+	at org.python.core.Py.compile_flags(Py.java:1731)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:514)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx77.f$0(embedded_jython:1)
+	at org.python.pycode._pyx77.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:59:06,568 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file embedded_jython line 1
+2015-05-08 10:59:06,571 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_03 (row 4)
+2015-05-08 10:59:06,571 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:137  - Using test timeout of 5 seconds
+2015-05-08 10:59:06,591 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "<string>", line None
+SyntaxError: Illegal character in file '/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_03/TestScript.py' for encoding 'utf-8'
+
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:212)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "<string>", line None
+SyntaxError: Illegal character in file '/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_03/TestScript.py' for encoding 'utf-8'
+
+	at org.python.core.Py.SyntaxError(Py.java:166)
+	at org.python.core.ParserFacade.fixParseError(ParserFacade.java:102)
+	at org.python.core.ParserFacade.parse(ParserFacade.java:184)
+	at org.python.core.Py.compile_flags(Py.java:1731)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:514)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx82.f$0(embedded_jython:1)
+	at org.python.pycode._pyx82.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:59:06,592 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file embedded_jython line 1
+2015-05-08 10:59:06,595 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_04 (row 1)
+2015-05-08 10:59:06,595 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,617 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:06,618 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.throwQTasteDataException()
+2015-05-08 10:59:06,619 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: NOT_AVAILABLE - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,623 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteDataException: com.qspin.qtaste.testsuite.QTasteDataException: Invalid data in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_04/TestScript.py", line 38, in <module>
+    doStep(Step1)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_04/TestScript.py", line 36, in Step1
+    testAPI.getEngineTest().throwQTasteDataException()
+  File "embedded_jython", line 122, in throwQTasteDataException
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+	at com.qspin.qtaste.testapi.impl.enginetest.EngineTestImpl.throwQTasteDataException(EngineTestImpl.java:55)
+
+2015-05-08 10:59:06,623 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_04/TestScript.py line 39
+2015-05-08 10:59:06,626 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_05 (row 1)
+2015-05-08 10:59:06,627 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,649 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:06,650 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: NOT_AVAILABLE - elapsed time: 0.000 seconds
+2015-05-08 10:59:06,653 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteDataException: com.qspin.qtaste.testsuite.QTasteDataException: TestData doesn't contain value for data INEXISTENT in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_05/TestScript.py", line 38, in <module>
+    doStep(Step1)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_05/TestScript.py", line 36, in Step1
+    x = testData.getValue("INEXISTENT")
+	at com.qspin.qtaste.testsuite.impl.TestDataImpl.getValue(TestDataImpl.java:91)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript$ScriptTestData.getValue(JythonTestScript.java:1260)
+
+2015-05-08 10:59:06,653 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_05/TestScript.py line 38
+2015-05-08 10:59:06,657 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_06 (row 1)
+2015-05-08 10:59:06,657 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,691 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:06,693 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: NOT_AVAILABLE - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,697 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteDataException: com.qspin.qtaste.testsuite.QTasteDataException: java.lang.NumberFormatException: For input string: "1.5" while parsing integer data DATA in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_06/TestScript.py", line 61, in <module>
+    doStep(Step1)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_06/TestScript.py", line 38, in Step1
+    x = testData.getIntValue('DATA')
+	at com.qspin.qtaste.testsuite.impl.TestDataImpl.getIntValue(TestDataImpl.java:110)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript$ScriptTestData.getIntValue(JythonTestScript.java:1264)
+
+2015-05-08 10:59:06,697 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_06/TestScript.py line 65
+2015-05-08 10:59:06,702 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_06 (row 2)
+2015-05-08 10:59:06,703 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,734 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step2)
+2015-05-08 10:59:06,736 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step2) - status: NOT_AVAILABLE - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,741 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteDataException: com.qspin.qtaste.testsuite.QTasteDataException: java.lang.NumberFormatException: For input string: "two" while parsing double data DATA in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_06/TestScript.py", line 63, in <module>
+    doStep(Step2)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_06/TestScript.py", line 47, in Step2
+    x = testData.getDoubleValue('DATA')
+	at com.qspin.qtaste.testsuite.impl.TestDataImpl.getDoubleValue(TestDataImpl.java:119)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript$ScriptTestData.getDoubleValue(JythonTestScript.java:1268)
+
+2015-05-08 10:59:06,741 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_06/TestScript.py line 65
+2015-05-08 10:59:06,745 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_06 (row 3)
+2015-05-08 10:59:06,746 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,773 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step3)
+2015-05-08 10:59:06,774 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step3) - status: NOT_AVAILABLE - elapsed time: 0.000 seconds
+2015-05-08 10:59:06,777 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteDataException: com.qspin.qtaste.testsuite.QTasteDataException: Error while parsing boolean data DATA for input string: "bad" in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_06/TestScript.py", line 65, in <module>
+    doStep(Step3)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_06/TestScript.py", line 56, in Step3
+    x = testData.getBooleanValue('DATA')
+	at com.qspin.qtaste.testsuite.impl.TestDataImpl.getBooleanValue(TestDataImpl.java:142)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript$ScriptTestData.getBooleanValue(JythonTestScript.java:1272)
+
+2015-05-08 10:59:06,777 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_06/TestScript.py line 65
+2015-05-08 10:59:06,780 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_07 (row 1)
+2015-05-08 10:59:06,781 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,798 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:06,800 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.throwQTasteException()
+2015-05-08 10:59:06,800 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: NOT_AVAILABLE - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,803 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteException: com.qspin.qtaste.testsuite.QTasteException: Generic QTasteException in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_07/TestScript.py", line 38, in <module>
+    doStep(Step1)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_07/TestScript.py", line 36, in Step1
+    testAPI.getEngineTest().throwQTasteException()
+  File "embedded_jython", line 97, in throwQTasteException
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+	at com.qspin.qtaste.testapi.impl.enginetest.EngineTestImpl.throwQTasteException(EngineTestImpl.java:59)
+
+2015-05-08 10:59:06,804 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_07/TestScript.py line 39
+2015-05-08 10:59:06,806 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_08 (row 1)
+2015-05-08 10:59:06,807 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,823 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:06,824 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.throwRuntimeException()
+2015-05-08 10:59:06,825 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: NOT_AVAILABLE - elapsed time: 0.001 seconds
+2015-05-08 10:59:06,828 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: java.lang.RuntimeException: java.lang.RuntimeException: Runtime exception in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_08/TestScript.py", line 38, in <module>
+    doStep(Step1)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_08/TestScript.py", line 36, in Step1
+    testAPI.getEngineTest().throwRuntimeException()
+  File "embedded_jython", line 62, in throwRuntimeException
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+  File "embedded_jython", line 17, in _TestAPIWrapper__invoke
+	at com.qspin.qtaste.testapi.impl.enginetest.EngineTestImpl.throwRuntimeException(EngineTestImpl.java:63)
+
+2015-05-08 10:59:06,828 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_08/TestScript.py line 39
+2015-05-08 10:59:06,831 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_09 (row 1)
+2015-05-08 10:59:06,831 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,848 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:06,849 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: FAIL - elapsed time: 0.000 seconds
+2015-05-08 10:59:06,852 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteTestFailException: com.qspin.qtaste.testsuite.QTasteTestFailException: This test must fail. in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_09/TestScript.py", line 46, in <module>
+    doStep(Step1)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_09/TestScript.py", line 36, in Step1
+    testAPI.stopTest(Status.FAIL, 'This test must fail.')
+  File "embedded_jython", line 22, in stopTest
+
+2015-05-08 10:59:06,852 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_09/TestScript.py line 47
+2015-05-08 10:59:06,868 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_10 (row 1)
+2015-05-08 10:59:06,869 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,892 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:06,893 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: NOT_AVAILABLE - elapsed time: 0.000 seconds
+2015-05-08 10:59:06,896 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteDataException: com.qspin.qtaste.testsuite.QTasteDataException: Test result must be not available. in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_10/TestScript.py", line 46, in <module>
+    doStep(Step1)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_10/TestScript.py", line 36, in Step1
+    testAPI.stopTest(Status.NOT_AVAILABLE, 'Test result must be not available.')
+  File "embedded_jython", line 24, in stopTest
+
+2015-05-08 10:59:06,896 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_10/TestScript.py line 47
+2015-05-08 10:59:06,901 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_11 (row 1)
+2015-05-08 10:59:06,901 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,922 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:06,923 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.checkDataIsInteger(1.0)
+2015-05-08 10:59:06,924 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: NOT_AVAILABLE - elapsed time: 0.002 seconds
+2015-05-08 10:59:06,927 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteDataException: com.qspin.qtaste.testsuite.QTasteDataException: Invalid argument(s): checkDataIsInteger(): 1st arg can't be coerced to int in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_11/TestScript.py", line 54, in <module>
+    doStep(Step1)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_11/TestScript.py", line 38, in Step1
+    engineTest.checkDataIsInteger(1.0)
+  File "embedded_jython", line 67, in checkDataIsInteger
+  File "embedded_jython", line 19, in _TestAPIWrapper__invoke
+
+2015-05-08 10:59:06,927 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_11/TestScript.py line 56
+2015-05-08 10:59:06,930 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_REPORT_11 (row 2)
+2015-05-08 10:59:06,930 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,954 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step2)
+2015-05-08 10:59:06,956 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.checkData1To5(1, 2, 3, 4)
+2015-05-08 10:59:06,957 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step2) - status: NOT_AVAILABLE - elapsed time: 0.002 seconds
+2015-05-08 10:59:06,961 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteDataException: com.qspin.qtaste.testsuite.QTasteDataException: Invalid argument(s): checkData1To5(): expected 5 args; got 4 in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_11/TestScript.py", line 56, in <module>
+    doStep(Step2)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_11/TestScript.py", line 48, in Step2
+    engineTest.checkData1To5(1,2,3,4)
+  File "embedded_jython", line 57, in checkData1To5
+  File "embedded_jython", line 19, in _TestAPIWrapper__invoke
+
+2015-05-08 10:59:06,961 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_REPORT/QTASTE_REPORT_11/TestScript.py line 56
+2015-05-08 10:59:06,964 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_01 (row 1)
+2015-05-08 10:59:06,965 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:06,982 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - Python syntax error in file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_01/TestScript.py at line 40, column 12:
+	if myValue eq True:
+
+2015-05-08 10:59:06,985 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_02 (row 1)
+2015-05-08 10:59:06,986 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:07,005 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:07,006 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: NOT_AVAILABLE - elapsed time: 0.001 seconds
+2015-05-08 10:59:07,008 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: AttributeError: EngineTestWrapper instance has no attribute 'nonExistentVerb' in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_02/TestScript.py", line 40, in <module>
+    doStep(Step1)	
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_02/TestScript.py", line 38, in Step1
+    testAPI.getEngineTest().nonExistentVerb()
+AttributeError: EngineTestWrapper instance has no attribute 'nonExistentVerb'
+
+	at org.python.core.PyException.doRaise(PyException.java:200)
+	at org.python.core.Py.makeException(Py.java:1239)
+	at org.python.core.Py.makeException(Py.java:1243)
+	at org.python.core.Py.makeException(Py.java:1247)
+	at org.python.core.Py.makeException(Py.java:1251)
+	at org.python.pycode._pyx2.doStep$1(embedded_jython:47)
+	at org.python.pycode._pyx2.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:301)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:127)
+	at org.python.core.PyFunction.__call__(PyFunction.java:317)
+	at org.python.pycode._pyx159.f$0(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_02/TestScript.py:40)
+	at org.python.pycode._pyx159.call_function(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_02/TestScript.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx158.f$0(embedded_jython:1)
+	at org.python.pycode._pyx158.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:59:07,008 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_02/TestScript.py line 40
+2015-05-08 10:59:07,012 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_03 (row 1)
+2015-05-08 10:59:07,012 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:07,035 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:07,035 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.returnDataAsString('text')
+2015-05-08 10:59:07,036 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:07,037 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (Step2)
+2015-05-08 10:59:07,037 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.returnDataAsInteger(4)
+2015-05-08 10:59:07,038 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (Step2) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:07,039 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (Step3)
+2015-05-08 10:59:07,040 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.returnDataAsDouble(3.14)
+2015-05-08 10:59:07,041 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (Step3) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:07,041 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 4 (Step4)
+2015-05-08 10:59:07,042 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:572  - Invoking EngineTest.returnDataAsBoolean(True)
+2015-05-08 10:59:07,042 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 4 (Step4) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:07,046 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_04 (row 1)
+2015-05-08 10:59:07,046 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:07,072 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (step1)
+2015-05-08 10:59:07,073 TRACE TestScript - ?:?    - -- begin of step 1 --
+2015-05-08 10:59:08,074 TRACE TestScript - ?:?    - -- end of step 1 --
+2015-05-08 10:59:08,076 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (step1) - status: SUCCESS - elapsed time: 1.003 seconds
+2015-05-08 10:59:08,078 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (step3)
+2015-05-08 10:59:08,079 TRACE TestScript - ?:?    - -- begin of step 3 --
+2015-05-08 10:59:08,180 TRACE TestScript - ?:?    - -- end of step 3 --
+2015-05-08 10:59:08,181 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (step3) - status: SUCCESS - elapsed time: 0.102 seconds
+2015-05-08 10:59:08,182 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 4a (step4a)
+2015-05-08 10:59:08,183 TRACE TestScript - ?:?    - -- begin of step 4a --
+2015-05-08 10:59:08,184 TRACE TestScript - ?:?    - -- end of step 4a --
+2015-05-08 10:59:08,184 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 4a (step4a) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:08,187 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_04 (row 2)
+2015-05-08 10:59:08,187 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:08,214 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (step1)
+2015-05-08 10:59:08,215 TRACE TestScript - ?:?    - -- begin of step 1 --
+2015-05-08 10:59:09,216 TRACE TestScript - ?:?    - -- end of step 1 --
+2015-05-08 10:59:09,218 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (step1) - status: SUCCESS - elapsed time: 1.003 seconds
+2015-05-08 10:59:09,219 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (step3)
+2015-05-08 10:59:09,221 TRACE TestScript - ?:?    - -- begin of step 3 --
+2015-05-08 10:59:09,321 TRACE TestScript - ?:?    - -- end of step 3 --
+2015-05-08 10:59:09,323 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (step3) - status: SUCCESS - elapsed time: 0.102 seconds
+2015-05-08 10:59:09,324 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 4a (step4a)
+2015-05-08 10:59:09,325 TRACE TestScript - ?:?    - -- begin of step 4a --
+2015-05-08 10:59:09,327 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 4a (step4a) - status: FAIL - elapsed time: 0.002 seconds
+2015-05-08 10:59:09,335 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteTestFailException: com.qspin.qtaste.testsuite.QTasteTestFailException: Fail in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_04/TestScript.py", line 104, in <module>
+    doStep('4a', step4a)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_04/TestScript.py", line 97, in step4a
+    testAPI.stopTest(Status.FAIL, 'Fail')
+  File "embedded_jython", line 22, in stopTest
+
+2015-05-08 10:59:09,336 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_04/TestScript.py line 104
+2015-05-08 10:59:09,339 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_04 (row 3)
+2015-05-08 10:59:09,339 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:09,367 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (step1)
+2015-05-08 10:59:09,368 TRACE TestScript - ?:?    - -- begin of step 1 --
+2015-05-08 10:59:10,368 TRACE TestScript - ?:?    - -- end of step 1 --
+2015-05-08 10:59:10,371 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (step1) - status: SUCCESS - elapsed time: 1.003 seconds
+2015-05-08 10:59:10,372 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (step3)
+2015-05-08 10:59:10,373 TRACE TestScript - ?:?    - -- begin of step 3 --
+2015-05-08 10:59:10,474 TRACE TestScript - ?:?    - -- end of step 3 --
+2015-05-08 10:59:10,475 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (step3) - status: SUCCESS - elapsed time: 0.102 seconds
+2015-05-08 10:59:10,476 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 4a (step4a)
+2015-05-08 10:59:10,479 TRACE TestScript - ?:?    - -- begin of step 4a --
+2015-05-08 10:59:10,480 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 4a (step4a) - status: NOT_AVAILABLE - elapsed time: 0.003 seconds
+2015-05-08 10:59:10,488 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: com.qspin.qtaste.testsuite.QTasteDataException: com.qspin.qtaste.testsuite.QTasteDataException: Not available in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_04/TestScript.py", line 104, in <module>
+    doStep('4a', step4a)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_04/TestScript.py", line 99, in step4a
+    testAPI.stopTest(Status.NOT_AVAILABLE, 'Not available')
+  File "embedded_jython", line 24, in stopTest
+
+2015-05-08 10:59:10,488 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_04/TestScript.py line 104
+2015-05-08 10:59:10,491 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_05 (row 1)
+2015-05-08 10:59:10,491 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:10,905 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (step1)
+2015-05-08 10:59:10,906 TRACE TestScript - ?:?    - -- step 1 --
+2015-05-08 10:59:10,906 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (step1) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:10,907 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1a (step1a)
+2015-05-08 10:59:10,907 TRACE TestScript - ?:?    - -- step 1a --
+2015-05-08 10:59:10,907 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1a (step1a) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:10,908 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (step2)
+2015-05-08 10:59:10,908 TRACE TestScript - ?:?    - -- step 2 --
+2015-05-08 10:59:10,909 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (step2) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:10,909 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (step3)
+2015-05-08 10:59:10,910 TRACE TestScript - ?:?    - -- step 3 --
+2015-05-08 10:59:10,910 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (step3) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:10,911 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 4 (step4)
+2015-05-08 10:59:10,911 TRACE TestScript - ?:?    - -- step 4 --
+2015-05-08 10:59:10,911 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 4 (step4) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:10,912 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 5 (step5)
+2015-05-08 10:59:10,912 TRACE TestScript - ?:?    - -- step 5 --
+2015-05-08 10:59:10,913 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 5 (step5) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:10,918 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_05 (row 2)
+2015-05-08 10:59:10,918 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:10,965 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (step2)
+2015-05-08 10:59:10,966 TRACE TestScript - ?:?    - -- step 2 --
+2015-05-08 10:59:10,967 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (step2) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:10,972 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_05 (row 3)
+2015-05-08 10:59:10,973 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:11,010 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (step3)
+2015-05-08 10:59:11,011 TRACE TestScript - ?:?    - -- step 3 --
+2015-05-08 10:59:11,011 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (step3) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:11,012 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 4 (step4)
+2015-05-08 10:59:11,013 TRACE TestScript - ?:?    - -- step 4 --
+2015-05-08 10:59:11,013 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 4 (step4) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:11,014 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 5 (step5)
+2015-05-08 10:59:11,015 TRACE TestScript - ?:?    - -- step 5 --
+2015-05-08 10:59:11,015 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 5 (step5) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:11,021 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_05 (row 4)
+2015-05-08 10:59:11,021 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:11,059 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (step1)
+2015-05-08 10:59:11,060 TRACE TestScript - ?:?    - -- step 1 --
+2015-05-08 10:59:11,060 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (step1) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:11,061 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1a (step1a)
+2015-05-08 10:59:11,062 TRACE TestScript - ?:?    - -- step 1a --
+2015-05-08 10:59:11,062 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1a (step1a) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:11,063 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (step2)
+2015-05-08 10:59:11,063 TRACE TestScript - ?:?    - -- step 2 --
+2015-05-08 10:59:11,064 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (step2) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:11,065 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (step3)
+2015-05-08 10:59:11,066 TRACE TestScript - ?:?    - -- step 3 --
+2015-05-08 10:59:11,066 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (step3) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:11,075 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_05 (row 5)
+2015-05-08 10:59:11,075 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:11,111 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (step2)
+2015-05-08 10:59:11,112 TRACE TestScript - ?:?    - -- step 2 --
+2015-05-08 10:59:11,113 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (step2) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:11,113 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (step3)
+2015-05-08 10:59:11,114 TRACE TestScript - ?:?    - -- step 3 --
+2015-05-08 10:59:11,115 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (step3) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:11,115 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 4 (step4)
+2015-05-08 10:59:11,116 TRACE TestScript - ?:?    - -- step 4 --
+2015-05-08 10:59:11,116 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 4 (step4) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:11,122 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_05 (row 6)
+2015-05-08 10:59:11,122 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:11,157 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: __builtin__.StepsException: Step 6 does not exist in steps table in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_05/TestScript.py", line 144, in <module>
+    doSteps(steps, selector)
+  File "embedded_jython", line 31, in doSteps
+  File "embedded_jython", line 7, in __findStepIndex
+__builtin__.StepsException: Step 6 does not exist in steps table
+
+	at org.python.core.PyException.doRaise(PyException.java:219)
+	at org.python.core.Py.makeException(Py.java:1239)
+	at org.python.core.Py.makeException(Py.java:1243)
+	at org.python.core.Py.makeException(Py.java:1247)
+	at org.python.pycode._pyx3.__findStepIndex$1(embedded_jython:7)
+	at org.python.pycode._pyx3.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:149)
+	at org.python.core.PyFunction.__call__(PyFunction.java:327)
+	at org.python.pycode._pyx3.doSteps$2(embedded_jython:37)
+	at org.python.pycode._pyx3.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:149)
+	at org.python.core.PyFunction.__call__(PyFunction.java:327)
+	at org.python.pycode._pyx219.f$0(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_05/TestScript.py:146)
+	at org.python.pycode._pyx219.call_function(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_05/TestScript.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx218.f$0(embedded_jython:1)
+	at org.python.pycode._pyx218.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:59:11,157 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+function __findStepIndex
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_05/TestScript.py line 146
+2015-05-08 10:59:11,163 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_06 (row 1)
+2015-05-08 10:59:11,164 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:11,194 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: NameError: name 'undefinedStep' is not defined in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py", line 69, in <module>
+    doStep(undefinedStep)
+NameError: name 'undefinedStep' is not defined
+
+	at org.python.core.Py.NameError(Py.java:260)
+	at org.python.core.PyFrame.getname(PyFrame.java:257)
+	at org.python.pycode._pyx225.f$0(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py:69)
+	at org.python.pycode._pyx225.call_function(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx224.f$0(embedded_jython:1)
+	at org.python.pycode._pyx224.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:59:11,194 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py line 69
+2015-05-08 10:59:11,202 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_06 (row 2)
+2015-05-08 10:59:11,202 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:11,230 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: NameError: name 'undefinedStep' is not defined in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py", line 64, in <module>
+    stepsWithUndefinedStep = [ (1, step1),
+NameError: name 'undefinedStep' is not defined
+
+	at org.python.core.Py.NameError(Py.java:260)
+	at org.python.core.PyFrame.getname(PyFrame.java:257)
+	at org.python.pycode._pyx231.f$0(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py:69)
+	at org.python.pycode._pyx231.call_function(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx230.f$0(embedded_jython:1)
+	at org.python.pycode._pyx230.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:59:11,231 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py line 69
+2015-05-08 10:59:11,237 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_06 (row 3)
+2015-05-08 10:59:11,237 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:11,267 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: NameError: name 'undefinedSteps' is not defined in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py", line 62, in <module>
+    doSteps(undefinedSteps)
+NameError: name 'undefinedSteps' is not defined
+
+	at org.python.core.Py.NameError(Py.java:260)
+	at org.python.core.PyFrame.getname(PyFrame.java:257)
+	at org.python.pycode._pyx237.f$0(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py:69)
+	at org.python.pycode._pyx237.call_function(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx236.f$0(embedded_jython:1)
+	at org.python.pycode._pyx236.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:59:11,267 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/EngineSuite/QTASTE_SCRIPT/QTASTE_SCRIPT_06/TestScript.py line 69
+2015-05-08 10:59:11,274 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_07 (row 1)
+2015-05-08 10:59:11,274 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:11,302 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:11,303 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:11,304 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (Step2)
+2015-05-08 10:59:11,305 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (Step2) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:11,306 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (Step3)
+2015-05-08 10:59:11,306 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (Step3) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:11,313 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_SCRIPT_07 (row 2)
+2015-05-08 10:59:11,314 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:11,343 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:11,344 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:11,345 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (Step2)
+2015-05-08 10:59:11,346 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (Step2) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:11,346 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (Step3)
+2015-05-08 10:59:11,347 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (Step3) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:11,354 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_MI_01 (row 1)
+2015-05-08 10:59:11,355 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:11,401 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:11,427 WARN  com.qspin.qtaste.kernel.testapi.MultipleInstancesComponentFactory - MultipleInstancesComponentFactory.java:99   - Component MultipleInstancesTest is not loaded because not defined in the testbed configuration.
+2015-05-08 10:59:11,428 WARN  com.qspin.qtaste.kernel.testapi.MultipleInstancesComponentFactory - MultipleInstancesComponentFactory.java:99   - Component MultipleInstancesTest is not loaded because not defined in the testbed configuration.
+2015-05-08 10:59:11,428 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: SUCCESS - elapsed time: 0.027 seconds
+2015-05-08 10:59:11,429 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (Step2)
+2015-05-08 10:59:11,430 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (Step2) - status: NOT_AVAILABLE - elapsed time: 0.000 seconds
+2015-05-08 10:59:11,432 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: __builtin__.ComponentNotPresentException: Component MultipleInstancesTest is not present in testbed in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_01/TestScript.py", line 45, in <module>
+    doStep(Step2)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_01/TestScript.py", line 41, in Step2
+    instance1.checkInstanceId("1")
+  File "embedded_jython", line 40, in checkInstanceId
+__builtin__.ComponentNotPresentException: Component MultipleInstancesTest is not present in testbed
+
+	at org.python.core.PyException.doRaise(PyException.java:200)
+	at org.python.core.Py.makeException(Py.java:1239)
+	at org.python.core.Py.makeException(Py.java:1243)
+	at org.python.core.Py.makeException(Py.java:1247)
+	at org.python.core.Py.makeException(Py.java:1251)
+	at org.python.pycode._pyx2.doStep$1(embedded_jython:47)
+	at org.python.pycode._pyx2.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:301)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:127)
+	at org.python.core.PyFunction.__call__(PyFunction.java:317)
+	at org.python.pycode._pyx255.f$0(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_01/TestScript.py:45)
+	at org.python.pycode._pyx255.call_function(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_01/TestScript.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx254.f$0(embedded_jython:1)
+	at org.python.pycode._pyx254.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:59:11,432 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_01/TestScript.py line 45
+2015-05-08 10:59:11,440 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:120  - Executing test script: QTASTE_MI_02 (row 1)
+2015-05-08 10:59:11,440 INFO  com.qspin.qtaste.testsuite.TestScript - TestScript.java:141  - No TIMEOUT test data, using default test timeout (60 seconds)
+2015-05-08 10:59:11,467 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 1 (Step1)
+2015-05-08 10:59:11,467 WARN  com.qspin.qtaste.kernel.testapi.MultipleInstancesComponentFactory - MultipleInstancesComponentFactory.java:99   - Component MultipleInstancesTest is not loaded because not defined in the testbed configuration.
+2015-05-08 10:59:11,468 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 1 (Step1) - status: SUCCESS - elapsed time: 0.001 seconds
+2015-05-08 10:59:11,469 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 2 (Step2)
+2015-05-08 10:59:11,470 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 2 (Step2) - status: SUCCESS - elapsed time: 0.000 seconds
+2015-05-08 10:59:11,470 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - Begin of step 3 (Step3)
+2015-05-08 10:59:11,471 INFO  com.qspin.qtaste.testsuite.impl.JythonTestScript - ?:?    - End of step 3 (Step3) - status: NOT_AVAILABLE - elapsed time: 0.000 seconds
+2015-05-08 10:59:11,473 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:956  - javax.script.ScriptException: __builtin__.ComponentNotPresentException: Component MultipleInstancesTest is not present in testbed in embedded_jython at line number 1
+	at org.python.jsr223.PyScriptEngine.scriptException(PyScriptEngine.java:202)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:42)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:31)
+	at javax.script.AbstractScriptEngine.eval(AbstractScriptEngine.java:264)
+	at com.qspin.qtaste.testsuite.impl.JythonTestScript.execute(JythonTestScript.java:696)
+	at com.qspin.qtaste.testsuite.TestScript$TaskThread.run(TestScript.java:352)
+Caused by: Traceback (most recent call last):
+  File "embedded_jython", line 1, in <module>
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_02/TestScript.py", line 56, in <module>
+    doStep(Step3)
+  File "embedded_jython", line 33, in doStep
+  File "/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_02/TestScript.py", line 52, in Step3
+    instance3.checkInstanceId("3")
+  File "embedded_jython", line 40, in checkInstanceId
+__builtin__.ComponentNotPresentException: Component MultipleInstancesTest is not present in testbed
+
+	at org.python.core.PyException.doRaise(PyException.java:200)
+	at org.python.core.Py.makeException(Py.java:1239)
+	at org.python.core.Py.makeException(Py.java:1243)
+	at org.python.core.Py.makeException(Py.java:1247)
+	at org.python.core.Py.makeException(Py.java:1251)
+	at org.python.pycode._pyx2.doStep$1(embedded_jython:47)
+	at org.python.pycode._pyx2.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:301)
+	at org.python.core.PyBaseCode.call(PyBaseCode.java:127)
+	at org.python.core.PyFunction.__call__(PyFunction.java:317)
+	at org.python.pycode._pyx261.f$0(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_02/TestScript.py:56)
+	at org.python.pycode._pyx261.call_function(/home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_02/TestScript.py)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.execfile_flags(__builtin__.java:522)
+	at org.python.core.__builtin__.execfile(__builtin__.java:499)
+	at org.python.core.__builtin__.execfile(__builtin__.java:526)
+	at org.python.core.BuiltinFunctions.__call__(__builtin__.java:155)
+	at org.python.core.PyObject.__call__(PyObject.java:408)
+	at org.python.pycode._pyx260.f$0(embedded_jython:1)
+	at org.python.pycode._pyx260.call_function(embedded_jython)
+	at org.python.core.PyTableCode.call(PyTableCode.java:165)
+	at org.python.core.PyCode.call(PyCode.java:18)
+	at org.python.core.Py.runCode(Py.java:1275)
+	at org.python.core.__builtin__.eval(__builtin__.java:484)
+	at org.python.core.__builtin__.eval(__builtin__.java:488)
+	at org.python.util.PythonInterpreter.eval(PythonInterpreter.java:198)
+	at org.python.jsr223.PyScriptEngine.eval(PyScriptEngine.java:40)
+	... 4 more
+
+2015-05-08 10:59:11,473 ERROR com.qspin.qtaste.testsuite.impl.JythonTestScript - JythonTestScript.java:959  - Script stack trace: 
+at file /home/remy/Workspaces/QSPIN/QTaste/qtaste/TestSuites/TestSuite_QTaste/MultipleInstanceTest/QTASTE_MI_02/TestScript.py line 56
+2015-05-08 10:59:11,488 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:232  - script engine command: java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython
+2015-05-08 10:59:11,488 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:250  - Stopping SUT using command 'Testbeds/ControlScripts/do_nothing.py stop'
+2015-05-08 10:59:11,489 TRACE com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:264  - FULL COMMAND : 'java -cp "/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../plugins/*:/home/remy/Workspaces/QSPIN/QTaste/qtaste/bin/../kernel/target/qtaste-kernel-deploy.jar:testapi/target/qtaste-testapi-deploy.jar" org.python.util.jython Testbeds/ControlScripts/do_nothing.py stop'
+2015-05-08 10:59:15,897 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:279  - SUT stopped
+2015-05-08 10:59:15,903 INFO  com.qspin.qtaste.kernel.engine.TestEngine - TestEngine.java:403  - TestEngine terminated

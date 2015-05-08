@@ -1,0 +1,8 @@
+#
+# Check the behaviour of QTaste when there is an error in the start of the control script.
+#
+
+TESTDIR=.
+TESTBED=testbed_with_control_script_start_error.xml
+TESTSUITE=TestSuite_QTaste
+TESTFUNC="check_output_log;check_steps_result"

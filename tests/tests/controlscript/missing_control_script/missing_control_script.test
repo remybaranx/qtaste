@@ -1,0 +1,25 @@
+#
+# Check the behaviour of QTaste when the control script file is missing
+#
+
+TESTDIR=.
+TESTBED=testbed_with_missing_control_script.xml
+TESTSUITE=TestSuite_QTaste
+TESTFUNC="my_check_output_log;check_steps_result"
+
+function my_check_output_log()
+{
+    # sanity checks
+    if [ $# -ne 1 ]
+    then
+        return 1
+    fi
+    
+    TESTNAME=$1
+    
+    TEST_RESULT=${TEST_OUTPUT_DIR}/${TESTNAME}/output.log
+
+    cat ${TEST_RESULT} | grep -e "IOError: \[Errno 2\] File not found.*missing.py" > /dev/null 2>&1
+
+    return $?
+}

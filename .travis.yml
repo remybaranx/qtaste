@@ -4,6 +4,6 @@ jdk:
 
 before_script: ./buildAll.sh
 script:
-    cd tests
-    ./testAll.sh
-
+    - cd tests
+    - ./testAll.sh
+    

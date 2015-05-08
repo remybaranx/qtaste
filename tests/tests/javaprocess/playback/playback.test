@@ -1,4 +1,5 @@
 TESTDIR=demo
 TESTBED=playback.xml
-TESTSUITE=Playback
-TESTFUNC=
+TESTSUITE=PlayBack
+TESTFUNC="default_check_result"
+TESTTIMEOUT=1200

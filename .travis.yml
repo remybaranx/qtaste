@@ -1,9 +1,15 @@
 language: java
-jdk:
-- oraclejdk7
 
-before_script: ./buildAll.sh
-script:
-    - cd tests
-    - ./testAll.sh
+jdk:
+    - oraclejdk7
+
+before_install:
+    - "export DISPLAY=:0.0"
+    - "sh -e /etc/init.d/xvfb start"
+
+install: ./buildAll.sh
+
+before_script: cd tests
+
+script: ./testAll.sh
     

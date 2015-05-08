@@ -1,0 +1,388 @@
+<result>
+  <testCase name="Start SUT" testScriptVersion="-" testDataRow=""></testCase>
+  <status result="pass"></status>
+  <steps></steps>
+</result>
+<result>
+  <testCase name="Choose - 1" testScriptVersion="undefined" testDataRow="1">Check Check box</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Choose - 2" testScriptVersion="undefined" testDataRow="2">Uncheck Check box</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Choose - 3" testScriptVersion="undefined" testDataRow="3">check Radio</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Choose - 4" testScriptVersion="undefined" testDataRow="4">check Toggle</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="ComponentAccessibilityCheck" testScriptVersion="undefined" testDataRow="1">Popup present</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="displayFirstPopup" status="SUCCESS">
+</step>
+<step id="1.1" name="displayFirstPopup.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="CheckAccessibility" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Document - 1" testScriptVersion="undefined" testDataRow="1">insert in text field</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Document - 2" testScriptVersion="undefined" testDataRow="2">insert in password field</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Document - 3" testScriptVersion="undefined" testDataRow="3">insert in text area</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Document - 4" testScriptVersion="undefined" testDataRow="4">insert wrong value in formatted text field</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Document - 5" testScriptVersion="undefined" testDataRow="5">insert in formatted text field</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Document - 6" testScriptVersion="undefined" testDataRow="6">insert in formatted text field (format change value)</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Document - 7" testScriptVersion="undefined" testDataRow="7">insert in text field</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Document - 8" testScriptVersion="undefined" testDataRow="8">insert in password field</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Document - 9" testScriptVersion="undefined" testDataRow="9">insert in text area</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Document - 10" testScriptVersion="undefined" testDataRow="10">insert wrong value in formatted text field</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Document - 11" testScriptVersion="undefined" testDataRow="11">insert in formatted text field</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Document - 12" testScriptVersion="undefined" testDataRow="12">insert in formatted text field (format change value)</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="step1" status="SUCCESS">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="FileChooser" testScriptVersion="undefined" testDataRow="1">row 1</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="openFileChooser" status="SUCCESS">
+</step>
+<step id="1.1" name="openFileChooser.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="selectFile" status="SUCCESS">
+</step>
+<step id="3" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="GuiStructureAnalyser" testScriptVersion="undefined" testDataRow="1">row 1</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="printGuiStructureToFile" status="SUCCESS">
+</step>
+<step id="1.1" name="printGuiStructureToFile.testChangeTabById" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="PopupControl - 1" testScriptVersion="undefined" testDataRow="1">Invalid popup Value -&gt; no popup</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="displayFirstPopup" status="SUCCESS">
+</step>
+<step id="1.1" name="displayFirstPopup.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="setPopupValue" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="PopupControl - 2" testScriptVersion="undefined" testDataRow="2">Ask for 5 popups but do not confirm</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="displayFirstPopup" status="SUCCESS">
+</step>
+<step id="1.1" name="displayFirstPopup.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="setPopupValue" status="SUCCESS">
+</step>
+<step id="3" name="valueValidation" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="PopupControl - 3" testScriptVersion="undefined" testDataRow="3">Open 5 popups</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="displayFirstPopup" status="SUCCESS">
+</step>
+<step id="1.1" name="displayFirstPopup.testChangeTabById" status="SUCCESS">
+</step>
+<step id="2" name="setPopupValue" status="SUCCESS">
+</step>
+<step id="3" name="valueValidation" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Selection - 1" testScriptVersion="undefined" testDataRow="1">Select 3rth element in a List</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="step1" status="FAIL">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Selection - 2" testScriptVersion="undefined" testDataRow="2">Select 2nd element in a combo box</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="step1" status="FAIL">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Selection - 3" testScriptVersion="undefined" testDataRow="3">Select the value 3 in a spinner</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="step1" status="FAIL">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Selection - 4" testScriptVersion="undefined" testDataRow="4">Select the value 10 in a slider</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="step1" status="FAIL">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Selection - 5" testScriptVersion="undefined" testDataRow="5">Select element &quot;Elisabeth II (80)&quot; in a combo box</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="step1" status="FAIL">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Selection - 6" testScriptVersion="undefined" testDataRow="6">Select element &quot;Tintin Milou (40)&quot; in a List</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="step1" status="FAIL">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="SelectionInTable - 1" testScriptVersion="undefined" testDataRow="1">Select &quot;Elisabeth II (80)&quot; row</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="step1" status="FAIL">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="SelectionInTable - 2" testScriptVersion="undefined" testDataRow="2">Select the second row with 40 as age value</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="step1" status="FAIL">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="SelectionInTree - 1" testScriptVersion="undefined" testDataRow="1">Select &quot;Elisabeth II (80)&quot; node</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="step1" status="FAIL">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="SelectionInTree - 2" testScriptVersion="undefined" testDataRow="2">Select &quot;Louis XVII (30)&quot; node</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="step1" status="FAIL">
+</step>
+<step id="1.1" name="step1.testChangeTabById" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="TabbedPaneSelection - 1" testScriptVersion="undefined" testDataRow="1">select DOCUMENT tab</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="reset" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="TabbedPaneSelection - 2" testScriptVersion="undefined" testDataRow="2">select CHOOSE tab</testCase>
+  <status result="pass"></status>
+  <steps><step id="1" name="reset" status="SUCCESS">
+</step>
+<step id="2" name="testChangeTabByIndex" status="SUCCESS">
+</step>
+<step id="3" name="reset" status="SUCCESS">
+</step>
+<step id="4" name="testChangeTabByTitle" status="SUCCESS">
+</step>
+<step id="5" name="reset" status="SUCCESS">
+</step>
+<step id="6" name="testChangeTabById" status="SUCCESS">
+</step>
+<step id="7" name="reset" status="SUCCESS">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="TabbedPaneSelection - 3" testScriptVersion="undefined" testDataRow="3">select no tab</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="reset" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="VisibilityCheck" testScriptVersion="undefined" testDataRow="1">row 1</testCase>
+  <status result="not available"></status>
+  <steps><step id="1" name="step1" status="FAIL">
+</step>
+<step id="1.1" name="step1.testChangeTabByTitle" status="FAIL">
+</step>
+</steps>
+</result>
+<result>
+  <testCase name="Stop SUT" testScriptVersion="-" testDataRow=""></testCase>
+  <status result="pass"></status>
+  <steps></steps>
+</result>

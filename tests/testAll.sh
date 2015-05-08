@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # This script looks for .test files, launch them and check the results. 
-# Usage: testAll.sh [-t <TEST_LIST_DIR>]
+# Usage: testAll.sh [<TEST_LIST_DIR>]
 #   - TEST_LIST_DIR : a directory which contains some .test files
 #
 
@@ -16,6 +16,7 @@ QTASTE_BIN=${QTASTE_ROOT}/bin/qtaste_start.sh
 ENGINE_CONF=${QTASTE_TEST_ROOT}/conf/engine.xml
 TEST_OUTPUT_DIR=${QTASTE_TEST_ROOT}/output
 TEST_LIST_DIR=
+GLOBAL_TEST_SUCCESS=0
 
 echo "QTASTE_ROOT: ${QTASTE_ROOT}"
 echo "QTASTE_TEST_ROOT: ${QTASTE_TEST_ROOT}"
@@ -139,7 +140,7 @@ function run_test()
     TESTFUNC=$5
     TESTTIMEOUT=$6
 
-    SUCCESS=0
+    TEST_SUCCESS=0
 
     # prepare the output directory
     quiet mkdir -p "${TEST_OUTPUT_DIR}/${TESTNAME}"
@@ -178,15 +179,15 @@ function run_test()
     fi
 
     # call the check result functions
-    IFS=';' read -a FUNCTIONS <<< ${TESTFUNC}
+    FUNCTIONS=$(echo ${TESTFUNC} | tr ";" "\n")
     
-    for FUNC in "${FUNCTIONS[@]}"
+    for FUNC in ${FUNCTIONS}
     do            
         # check that it's really a function
         if ! type ${FUNC} | grep -e ".*function.*" > /dev/null 2>&1
         then
             printf '%-60s %-20s\n' "->  ${FUNC}" "${RED}[FAILURE]${NC}"
-            SUCCESS=1
+            TEST_SUCCESS=1
             continue
         fi
 
@@ -197,16 +198,17 @@ function run_test()
             printf '%-60s %-20s\n' "->  ${FUNC}" "${GREEN}[SUCCESS]${NC}"
         else
             printf '%-60s %-20s\n' "->  ${FUNC}" "${RED}[FAILURE]${NC}"
-            SUCCESS=1
+            TEST_SUCCESS=1
         fi
         
     done 
 
-    if [ ${SUCCESS} -eq 0 ]
+    if [ ${TEST_SUCCESS} -eq 0 ]
     then
         printf '%-60s %-20s\n' ${TESTNAME} "${GREEN}[SUCCESS]${NC}"
     else
         printf '%-60s %-20s\n' ${TESTNAME} "${RED}[FAILURE]${NC}"
+        GLOBAL_TEST_SUCCESS=1
     fi
 }
 
@@ -215,20 +217,10 @@ function run_test()
 #---------------------------------------------------------
 
 # parse arguments
-while getopts ":t:" OPT; do
-    case ${OPT} in
-    t)  TEST_LIST_DIR=${OPTARG}
-        ;;
-       
-    \?) print_error "Invalid option -${OPTARG}"
-        exit -1
-        ;;
-        
-    :)  print_error "Option ${OPTARG} requires an argument."
-        exit -1
-        ;;
-    esac
-done
+if [ $# -eq 1 ]
+then
+    TEST_LIST_DIR=$1
+fi
 
 # if no TEST_LIST_DIR has been set, use the default one
 if [ -z ${TEST_LIST_DIR} ]
@@ -323,3 +315,5 @@ do
     # run the test
     run_test ${TESTNAME} ${TESTDIR} ${TESTBED} ${TESTSUITE} ${TESTFUNC} ${TESTTIMEOUT}
 done
+
+exit ${GLOBAL_TEST_SUCCESS}
